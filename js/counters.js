@@ -1,5 +1,5 @@
 
-import { CountUp } from "../counterup.js";
+import { CountUp } from "/js/counterup.js";
 
 // const options = {
 //     decimalPlaces: 0,
