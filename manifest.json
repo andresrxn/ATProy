@@ -1,0 +1,32 @@
+{
+    "short_name": "FRDA",
+    "name": "Fundación Redes de Ayuda",
+    "icons": [
+        {
+            "src": "http://localhost/FRDA/img/logos/svg/redes-de-ayuda.svg",
+            "type": "image/png",
+            "sizes": "36x36"
+        },
+        {
+            "src": "http://localhost/FRDA/img/logos/svg/redes-de-ayuda.svg",
+            "type": "image/png",
+            "sizes": "72x72"
+        },
+        {
+            "src": "http://localhost/FRDA/img/logos/svg/redes-de-ayuda.svg",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "http://localhost/FRDA/img/logos/svg/redes-de-ayuda.svg",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": "http://localhost/FRDA/",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "scope": "http://localhost/FRDA/",
+    "theme_color": "#3367D6",
+    "description": "Weather forecast information"
+}

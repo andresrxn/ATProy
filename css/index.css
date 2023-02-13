@@ -1,0 +1,264 @@
+.section-title p {
+    margin-bottom: 15px;
+}
+
+section {
+    overflow: hidden;
+}
+
+.banner {
+    padding-top: 70px;
+}
+
+.banner:after {
+    content: "";
+    background: linear-gradient(to top, #eeeeee, #eeeeee00);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+}
+
+.banner-animation {
+    margin-top: 30px;
+    min-height: 200px;
+}
+
+.banner-animation .left {
+    transform: rotateY(180deg);
+    display: none;
+}
+
+.counters {
+    padding: 120px 0;
+}
+
+.counters-container {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 40px;
+}
+
+.counters:after,
+.counters::before {
+    content: "";
+    background: linear-gradient(to bottom, #eeeeee, #eeeeee00);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+
+.counters::before {
+    background: linear-gradient(to top, #eeeeee, #eeeeee00);
+    bottom: 0;
+    top: auto;
+}
+
+.counter {
+    text-align: center;
+    display: grid;
+    gap: 10px;
+    opacity: 0.9;
+}
+
+.counter-number span {
+    font-size: 0.9em;
+}
+
+.counter-number {
+    font-size: 2.2em;
+    font-weight: 800;
+    padding-right: 20px;
+    color: var(--blanco);
+}
+
+.counter-des {
+    font-size: 1em;
+    font-weight: 500;
+    width: 60%;
+    margin: auto;
+    opacity: 0.7;
+}
+
+.counter .plus {
+    color: var(--blanco);
+    font-weight: 500;
+}
+
+.counters .link a {
+    margin-top: 30px;
+    font-weight: 400;
+    display: inline-block;
+    color: var(--blanco);
+    z-index: 1000;
+}
+
+.services {
+    padding-top: 40px;
+}
+
+.services-imgs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    overflow: hidden;
+    padding-bottom: 65px;
+}
+
+.service-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.service-img img {
+    box-shadow: 2px 10px 20px -6px rgba(0, 0, 0, 0.25);
+    object-fit: cover;
+    height: 250px;
+    width: 170px;
+    border-radius: 7px;
+}
+
+.service-img.one {
+    transform: translateX(-10px) translateY(20px) scale(1.1);
+}
+
+.service-img.two {
+    transform: translateX(5px) scale(1.07);
+}
+
+.service-img.three {
+    transform: translateX(50%) translateY(-150px) scale(0.85);
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.service-img.five {
+    transform: scale(0.9) translateX(70px) translateX(-20px);
+    z-index: 1000;
+}
+
+.service-img.four {
+    transform: translateY(65px) scale(1.25) translateX(25px);
+    z-index: 1000;
+}
+
+.service-img.six {
+    transform: translateY(70px) scale(0.8) translateX(30px);
+}
+
+.service-img.seven {
+    transform: translateX(10px) translateY(-10px);
+}
+
+.service-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #090909, #09090900);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 12px;
+    font-size: 0.95em;
+    border-radius: 7px;
+    color: var(--blanco);
+    text-shadow: 2px 2px 4px #121212;
+}
+
+.services .link {
+    margin-bottom: 50px;
+}
+
+.clients {
+    padding-top: 60px;
+}
+
+.clients-slider {
+    width: 100%;
+    position: relative;
+    overflow: auto;
+}
+
+.clients-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.clients-container {
+    width: max-content;
+    justify-content: flex-start;
+    gap: 35px;
+    animation: slide 30s infinite linear;
+    transition: 5s ease !important;
+    pointer-events: none;
+}
+
+.client-slider-card {
+    pointer-events: auto;
+    position: relative;
+    z-index: 1000;
+    min-height: 100px;
+    text-decoration: none;
+    width: 120px;
+    object-fit: contain;
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
+}
+
+.contact-animations {
+    position: relative;
+    padding-bottom: 80px;
+    /* padding-top: 20px; */
+}
+
+.contact-animations lottie-player {
+    transform: scale(2.5);
+}
+
+.contact-animations .right {
+    margin-left: -55px;
+}
+
+@media screen and (min-width:760px) {
+    .counter-des {
+        font-size: 1em;
+        width: 65%;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .counters-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        font-size: 1em;
+    }
+
+    .counter-number {
+        font-size: 3.5em;
+    }
+
+    .client-slider-card:hover {
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    .counter-number {
+        font-size: 4.5em;
+    }
+
+    .counter-number span {
+        font-size: 0.7em;
+    }
+
+    .counter-des {
+        font-size: 1.35em;
+    }
+}

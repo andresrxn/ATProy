@@ -1,0 +1,1122 @@
+<!-- <?php include_once("../views/connection-user-two.php"); ?> -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-title" content="ThePrincipal" />
+    <meta name="application-name" content="ThePrincipal" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Title  -->
+    <title>Servicios | ThePrincipal™</title>
+    <meta name="description"
+        content="Descubre temas relacionados" />
+    <!--About-->
+    <meta name="author" content="ThePrincipal" />
+    <meta name="keywords"
+        content="blog, nuevo conocimiento, aprender gratis, capacitación online, oportunidades de estudiar" />
+
+    <!-- Preconnect  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Css  -->
+    <link defer rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css" integrity="sha512-okkLcBJE+U19Dpd0QdHA1wn4YY6rW3CwaxeLJT3Jmj9ZcNSbln/VYw8UdqXRIwLX7J8PmtHs0I/FPAhozFvXKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="../css/normalize.min.css" />
+    <link rel="stylesheet" href="../css/default.min.css" />
+    <link rel="stylesheet" href="legal.min.css">
+
+    <!-- Script Defer -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js" integrity="sha512-wdUM0BxMyMC/Yem1RWDiIiXA6ssXMoxypihVEwxDc+ftznGeRu4s9Fmxl8PthpxOh5CQ0eqjqw1Q8ScgNA1moQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    
+    <script defer src="../js/main.min.js"></script>
+    
+    <!-- <script defer src="js/categories.min.js"></script> -->
+        
+    <!-- <?php if (!isset($_COOKIE["cookies-accepted"])) { ?> -->
+        <script defer src="../js/cookies.min.js"></script>
+        <!-- <?php } ?> -->
+
+    <!-- <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PJ3MVCK');
+    </script> -->
+
+    <meta property="og:url" content="https://www.theprincipal.info" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Servicios | ThePrincipal™" />
+    <meta property="og:description"
+        content="Capacítate y expande tus conocimientos con los temas más relevantes de la web en un solo lugar" />
+    <meta property="og:image" content="img/social/fundacion-redes-de-ayuda-banner.jpg" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@ThePrincipal" />
+    <meta name="twitter:creator" content="@ThePrincipal" />
+    <meta name="twitter:title" content="Servicios | ThePrincipal™" />
+    <meta name="twitter:description"
+        content="Capacítate y expande tus conocimientos con los temas más relevantes de la web en un solo lugar" />
+    <!-- <meta name="twitter:image" content="img/social/fundacion-redes-de-ayuda-banner.jpg"> -->
+
+    <link rel="shortcut icon" href="../favicon.png" />
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+    <link rel="shortcut icon" sizes="32x32" href="../favicon-32x32.png" />
+    <link rel="shortcut icon" sizes="64x64" href="../favicon-64x64.png" />
+    <!-- <link rel="manifest" href="manifest.json" /> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
+    <!-- <link rel="manifest" href="site.webmanifest" /> -->
+    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5" />
+
+</head>
+
+<body class="change-back">
+
+
+
+    <header class="flex change-back" id="header">
+        <div class="header-container flex margin">
+            <div class="header-menu white-color" id="header-menu">
+                <i class="ri-menu-line icon"></i>
+            </div>
+            <nav class="header-nav" id="header-nav">
+                <ul class="change-back">
+                    <div class="header-nav-logo">
+                        <img src="../assets/logos/svg/theprincipal-logo.svg" alt="">
+                    </div>
+                    <li>
+                        <a href="../categorias.html" class="white-color">
+                            <div class="header-nav-name">
+
+                                <i class="ri-dashboard-line icon"></i>
+                                Categorías
+                            </div>
+                            <div class="header-nav-more">
+                                <i class="ri-arrow-right-line"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../cursos.html" class="white-color">
+                            <div class="header-nav-name">
+
+                                <i class="ri-medal-line icon"></i>
+                                Cursos
+                            </div>
+                            <div class="header-nav-more">
+                                <i class="ri-arrow-right-line"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../resumenes.html" class="white-color">
+                            <div class="header-nav-name">
+                                <i class="ri-book-open-line icon"></i>
+                                Resúmenes
+                            </div>
+                            <div class="header-nav-more">
+                                <i class="ri-arrow-right-line"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../servicios.html" class="white-color">
+                            <div class="header-nav-name">
+
+                                <i class="ri-briefcase-line icon"></i>
+                                Servicios
+                            </div>
+                            <div class="header-nav-more">
+                                <i class="ri-arrow-right-line"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../promociones.html" class="white-color">
+                            <div class="header-nav-name">
+
+                                <i class="ri-bookmark-3-line icon"></i>
+                                Promociones
+                                <div class="dot"></div>
+                            </div>
+                            <div class="header-nav-more">
+                                <i class="ri-arrow-right-line"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../nosotros.html" class="white-color">
+                            <div class="header-nav-name">
+
+                                <img src="../assets/logos/svg/theprincipal-isotipo-line-icono.svg" alt="">
+                                Nosotros
+                            </div>
+                            <div class="header-nav-more">
+                                <i class="ri-arrow-right-line"></i>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="header-nav-date">
+                    <div class="set-mode" id="set-mode">
+                        <input type="checkbox" class="set-mode-check" id="set-mode-check" />
+                        <label class="set-mode-label" for="set-mode-check">
+                            <i class="ri-moon-line icon"></i>
+                            <i class="ri-sun-line icon"></i>
+                            <span class="set-mode-ball"></span>
+                        </label>
+                    </div>
+                    <div> <span class="nav-date white-color"><i class="ri-calendar-line"></i> 3 de marzo, 2023 -</span> <a href="" class="white-color"><i title="¡Apóyanos!" class="ri-heart-fill icon-heart"></i> <span>Apóyanos</span></a></div>
+                </div>
+            </nav>
+            <a href="/" class="header-logo" id="header-logo">
+                <img  src="../assets/logos/svg/theprincipal-logo.svg" alt="" >
+            </a>
+            <div class="header-search" id="header-search">
+                <div class="form-control search">
+                    <form class="form" id="form-header-search" method="POST">
+
+                        <input type="search" id="header-input-search" name="" placeholder="Tecnología, actualidad, salud, etc.">
+                        <button class="btn form-control-search-btn flex" id="header-input-search-btn">
+                            <i class="ri-search-line icon"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="header-options flex white-color">
+                <div class="header-search-icon" title="Buscador" id="header-search-icon">
+                    <i class="ri-search-line icon"></i>
+                </div>
+                <a href="ingresar.html" class="header-account-icon flex" title="Perfil">
+                    <i class="ri-user-line icon"></i>                    
+                    <!-- CR -->                    
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+
+    <main>
+        <section class="content margin white-color">
+            <h1 class="h1">Términos y Condiciones</h1>
+            <span class="created"> Actualizado: <time>30 de marzo del 2022</time> </span>
+
+            <!-- <span class="version">Version 1.0</span> -->
+
+            <div class="legal-updated">
+                <div class="updated-container">
+                    <p class="updated"> <i class="fas fa-info-circle icon"></i> Hemos actualizado nuestros Términos y Condiciones en diferentes ámbitos, entre ellos:
+                        Permisos del Usuario, Límites de Privacidad, Manejo de la Información, etc. Los presentes cambios entrarán en vigencia a partir del 22 de marzo del 2022, los cuales a continuación están debidamente resaltados en azúl.
+
+                    </p>
+                </div>
+            </div>
+
+
+            <h2 id="interpretacion-y-definiciones">INTERPRETACIÓN Y DEFINICIONES</h2>
+            <h3>INTERPRETACIÓN</h3>
+            <p>
+                Las palabras cuya letra inicial está en mayúscula tienen el significado que se define a continuación. Las siguientes definiciones tendrán el mismo significado independientemente de que aparezcan en singular o en plural.
+            </p>
+            <h3>DEFINICIONES</h3>
+            <p>
+                A los efectos del presente documento de Términos y Condiciones:
+            </p>
+            <ul>
+                <li>
+                    <strong>Cuenta:</strong> significa una cuenta única creada para que Usted pueda acceder a nuestro Servicio o a partes de nuestro Servicio.
+                </li>
+
+                <li>
+                    <strong>Fundación:</strong> (referida como "la Fundación", "Nosotros", "Nos" o "Nuestra" en este Acuerdo) se refiere a Fundación Redes de Ayuda, con residencia en Guatemala, Guatemala, z17, Km.8 carretera al atlántico, Condominio
+                    Casa Florentina Premier, NIT: 124124-7.
+                </li>
+                <li>
+                    <strong>País:</strong> se refiere a la República de Guatemala.
+                </li>
+
+                <li>
+                    <strong>Dispositivo:</strong> cualquier dispositivo que pueda acceder al Servicio, como una computadora, televisión, teléfono móvil o una tableta digital.
+                </li>
+
+                <li>
+                    <strong>Datos Personales:</strong> cualquier información relacionada con un individuo identificado o identificable.
+                </li>
+
+                <li>
+                    <strong>Proveedor de Servicios:</strong> toda persona física o jurídica que procesa los datos en nombre de la Compañía. Se refiere a terceras empresas o personas físicas empleadas por la Empresa para facilitar el Servicio,
+                    para prestar el Servicio en nombre de la Empresa, para realizar servicios relacionados con el Servicio o para ayudar a la Empresa a analizar cómo se utiliza el Servicio.
+                </li>
+                <li>
+                    <strong>Los Datos de Uso:</strong> datos recogidos automáticamente, generados por el uso del Servicio o por la propia infraestructura del Servicio (por ejemplo, la duración de la visita a una página).
+                </li>
+                <li>
+                    <strong>Sitio web</strong> se refiere al sitio de Fundación Redes de Ayuda, accesible desde https://www.fundacionredesdeayuda.org
+                </li>
+                <li>
+                    <strong>Usted:</strong> persona física que accede o utiliza el Servicio, o a la Fundación, u otra entidad legal en nombre de la cual dicha persona física accede o utiliza el Servicio, según corresponda.
+                </li>
+            </ul>
+            <h2 id="informacion-general">INFORMACIÓN GENERAL</h2>
+            <p>
+                En cumplimiento con el deber de información dispuesto en la Ley 34/2002 de Servicios de la Sociedad de
+                la Información y el Comercio Electrónico (LSSI-CE) de 11 de julio, se facilitan a continuación los
+                siguientes datos de información general de este sitio
+                web:
+            </p>
+            <p>
+                La titularidad de este Sitio Web la
+                ostenta: Fundación Redes de Ayuda, provista de NIT: 324223-5 e inscrita en: Guatemala, Guatemala,
+                Guatemala con los siguientes datos registrales: tomo
+                20, pagina 45, hoja 700.
+            </p>
+
+            <p>
+                Fundación Redes de Ayuda le otorga una licencia revocable, no exclusiva,
+                intransferible y limitada para utilizar el sitio web estrictamente de acuerdo con los términos de este Acuerdo.
+
+            </p>
+            <h2 id="terminos-y-condiciones-generales-de-uso">TÉRMINOS Y CONDICIONES GENERALES DE USO</h2>
+            <h3 class="updated">El Sitio Web</h3>
+            <p class="updated">
+                El objeto de las presentes Condiciones Generales de Uso (en adelante, "Condiciones") es regular el
+                acceso y la utilización del Sitio Web. A los efectos de las presentes Condiciones se entenderá como
+                Sitio Web: la apariencia externa de los interfaces de
+                pantalla, tanto de forma estática como de forma dinámica, es decir, el árbol de navegación; y todos los
+                elementos integrados tanto en los interfaces de pantalla como en el árbol de navegación (en adelante,
+                "Contenidos") y todos aquellos
+                servicios o recursos en línea que en su caso ofrezca a los Usuarios (en adelante, "Servicios").
+            </p>
+            <p class="updated">
+                Fundación Redes de Ayuda se reserva la facultad de modificar, en cualquier momento, y sin aviso previo,
+                la presentación y configuración del Sitio Web y de los Contenidos y Servicios que en él pudieran estar
+                incorporados. El Usuario reconoce y acepta que
+                en cualquier momento Fundación Redes de Ayuda pueda interrumpir, desactivar y/o cancelar cualquiera de
+                estos elementos que se integran en el Sitio Web o el acceso a los mismos.
+            </p>
+            <p class="updated">
+                El acceso al Sitio Web por el Usuario tiene carácter libre y, por regla general, es gratuito sin que el
+                Usuario tenga que proporcionar una contraprestación para poder disfrutar de ello, salvo en lo relativo
+                al coste de conexión a través de la red de telecomunicaciones
+                suministrada por el proveedor de acceso que hubiere contratado el Usuario.
+            </p>
+
+            <p class="updated">
+                La utilización de los Contenidos no requiere previa suscripción o registro alguno.
+            </p>
+            <h3>El Usuario</h3>
+            <p>
+                El acceso, la navegación y uso del Sitio Web, así como por los espacios habilitados para interactuar
+                entre el Usuario y Fundación Redes de Ayuda, como los comentarios y/o espacios de
+                blogging que hubiesen en un futuro, confiere la condición de Usuario, por lo que
+                se aceptan desde que se inicia la navegación por el Sitio Web, todas las Condiciones aquí establecidas,
+                así como sus ulteriores modificaciones, sin perjuicio de la aplicación de la correspondiente normativa
+                legal de obligado cumplimiento
+                según el caso. Dada la relevancia de lo anterior, se recomienda al Usuario leerlas cada vez que visite
+                el Sitio Web.
+            </p>
+            <p>
+                El Sitio Web de Fundación Redes de Ayuda proporciona gran diversidad de información, servicios y datos.
+                El Usuario asume su responsabilidad para realizar un uso correcto del Sitio Web. Esta responsabilidad se
+                extenderá a:
+            </p>
+            <ul>
+                <li>
+                    Un uso de la información, Contenidos y/o Servicios y datos ofrecidos por Fundación Redes de Ayuda
+                    sin que sea contrario a lo dispuesto por las presentes Condiciones, la Ley, la moral o el orden
+                    público, o que de cualquier otro modo puedan suponer lesión
+                    de los derechos de terceros o del mismo funcionamiento del Sitio Web.
+                </li>
+                <li>
+                    La veracidad y licitud de las informaciones aportadas por el Usuario en los formularios extendidos
+                    por Fundación Redes de Ayuda para el acceso a ciertos Contenidos o Servicios ofrecidos por el Sitio
+                    Web. En todo caso, el Usuario notificará de forma inmediata
+                    a Fundación Redes de Ayuda acerca de cualquier hecho que permita el uso indebido de la información
+                    registrada en dichos formularios, tales como, pero no sólo, el robo, extravío, o el acceso no
+                    autorizado a identificadores y/o contraseñas,
+                    con el fin de proceder a su inmediata cancelación.
+                </li>
+
+
+            </ul>
+
+            <p>
+                Fundación Redes de Ayuda se reserva el derecho de retirar todos aquellos posibles comentarios,
+                alegaciones, difamaciones, aportaciones que vulneren la ley, el respeto a la dignidad de la persona, que
+                sean discriminatorios, xenófobos, racistas, pornográficos,
+                de spam, que atenten contra la juventud o la infancia, el orden o la seguridad pública o que, a su
+                juicio, no resultaran adecuados para su publicación.
+            </p>
+            <p>
+                En cualquier caso, Fundación Redes de Ayuda no será responsable de las opiniones vertidas por los
+                Usuarios a través de comentarios u otras herramientas de blogging o de participación que pueda haber
+                actualmente o en el futuro.
+            </p>
+            <p>
+                El mero acceso a este Sitio Web no supone entablar ningún tipo de relación de carácter comercial entre
+                Fundación Redes de Ayuda y el Usuario.
+            </p>
+            <p>
+                Siempre en el respeto de la legislación vigente, este Sitio Web de Fundación Redes de Ayuda se dirige a
+                todas las personas mayores de trece (13) años que puedan acceder y/o navegar por las páginas del Sitio Web.
+            </p>
+            <p>
+                El comportamiento del usuario se verá prohibido a violentar cualquier operación, proceso, persona y/o actividad dentro del sitio web, sin limitarse a:
+            </p>
+            <ul>
+                <li>Acceder a datos o información que no sea destinada al ser pública o que no tenga autorización previa a acceder a estos;
+
+                </li>
+                <li>Usar el Sitio Web con propósitos ajenos a los previstos o intentar cambiar el funcionamiento del sitio, incluyendo el intentar explorar, escanear o probar la vulnerabilidad de un sistema, una red o medidas de seguridad o autenticación sin la autorización correspondiente;
+                </li>
+                <li>Intentar obstruir el servicio de un usuario, una computadora, un servidor o una red, entre otros, a través del envío de virus al sitio, la sobrecarga, los envíos masivos, el envío de correos no deseados, el "bombardeo" de correo o el bloqueo del sistema;
+                </li>
+                <li>Falsificar el encabezado de un paquete TCP/IP o cualquier porción de la información del encabezado en un envío de grupo de noticias o e-mail, así como falsificar comunicaciones en nombre del Sitio Web (haciéndose pasar por el mismo) o dirigiéndose al Sitio Web (haciéndose pasar por el usuario legítimo).
+                </li>
+                <li>No puede enviar mensajes de e-mail no solicitado y no autorizado en nombre de Fundación Redes de Ayuda, incluida cualquier publicidad nuestros servicios.
+                </li>
+
+            </ul>
+            <p>
+                Cualquier falta a las limitaciones previamente mencionadas, Fundación Redes de Ayuda puede y tomará acciones legales hasta donde lo permita la ley vigente y aplicable en ese momento del territorio de la República de Guatemala junto con sus juzgados y tribunales.
+            </p>
+            <p>
+                El Sitio Web está dirigido principalmente a Usuarios residentes en la República de Guatemala. Fundación
+                Redes de Ayuda no asegura que el Sitio Web cumpla con legislaciones de otros países, ya sea total o
+                parcialmente. Si el Usuario reside o tiene su domiciliado
+                en otro lugar y decide acceder y/o navegar en el Sitio Web lo hará bajo su propia responsabilidad,
+                deberá asegurarse de que tal acceso y navegación cumple con la legislación local que le es aplicable, no
+                asumiendo Fundación Redes de Ayuda
+                responsabilidad alguna que se pueda derivar de dicho acceso.
+            </p>
+
+            <h2 id="exclusion-de-garantias-y-responsabilidad">ACCESO Y NAVEGACIÓN EN EL SITIO WEB: EXCLUSIÓN DE GARANTÍAS Y RESPONSABILIDAD</h2>
+            <p>
+                Fundación Redes de Ayuda no garantiza la continuidad, disponibilidad y utilidad del Sitio Web, ni de los
+                Contenidos o Servicios. Fundación Redes de Ayuda hará todo lo posible por el buen funcionamiento del
+                Sitio Web, sin embargo, no se responsabiliza
+                ni garantiza que el acceso a este Sitio Web no vaya a ser ininterrumpido o que esté libre de error.
+            </p>
+            <p>
+                La plataforma se le proporciona "TAL CUAL" y "SEGÚN DISPONIBILIDAD" y con todas las fallas y defectos
+                sin garantía de ningún tipo. En la medida máxima permitida por la ley aplicable, Fundación Redes de
+                Ayuda, en su propio nombre y en nombre de sus afiliados y sus respectivos licenciantes y proveedores de
+                servicios, renuncia expresamente a todas las garantías, ya sean expresas, implícitas, legales o de otro
+                tipo, con con respecto a la plataforma, incluidas todas las garantías implícitas de comerciabilidad,
+                idoneidad para un propósito particular, título y no infracción, y garantías que puedan surgir del curso
+                del trato, el curso del desempeño, el uso o la práctica comercial. Sin limitación a lo anterior,
+                Fundación Redes de Ayuda no ofrece garantía ni compromiso, y no hace ninguna representación de ningún
+                tipo de que la plataforma cumplirá con sus requisitos, logrará los resultados previstos, será compatible
+                o funcionará con cualquier otro software, sitios web, sistemas o servicios, operen sin interrupciones,
+                cumplan con los estándares de rendimiento o confiabilidad o que no tengan errores o que cualquier error
+                o defecto puede o será corregido.
+
+            </p>
+            <p>
+                Sin limitar lo anterior, ni Fundación Redes de Ayuda ni ningún proveedor de Fundación Redes de Ayuda
+                hace ninguna representación o garantía de ningún tipo, expresa o implícita: (i) en cuanto al
+                funcionamiento o disponibilidad de la plataforma, o la información, contenido y materiales o productos
+                incluidos en el mismo; (ii) que la plataforma será ininterrumpida o libre de errores; (iii) en cuanto a
+                la precisión, confiabilidad o vigencia de cualquier información o contenido proporcionado a través de la
+                plataforma; o (iv) que la plataforma, sus servidores, el contenido o los correos electrónicos enviados
+                desde o en nombre de Fundación Redes de Ayuda están libres de virus, scripts, troyanos, gusanos,
+                malware, bombas de tiempo u otros componentes nocivos. Algunas jurisdicciones no permiten la exclusión o
+                las limitaciones de las garantías implícitas o las limitaciones de los derechos legales aplicables de un
+                consumidor, por lo que algunas o todas las exclusiones y limitaciones anteriores pueden no aplicarse en
+                su caso.
+            </p>
+            <p>
+                Tampoco se responsabiliza o garantiza que el contenido o software al que pueda accederse a través de
+                este Sitio Web, esté libre de error o cause un daño al sistema informático (software y hardware) del
+                Usuario. En ningún caso Fundación Redes de Ayuda
+                será responsable por las pérdidas, daños o perjuicios de cualquier tipo que surjan por el acceso,
+                navegación y el uso del Sitio Web, incluyéndose, pero no limitándose, a los ocasionados a los sistemas
+                informáticos o los provocados por
+                la introducción de virus. Fundación Redes de Ayuda tampoco se hace responsable de los daños que pudiesen
+                ocasionarse a los usuarios por un uso inadecuado de este Sitio Web.
+            </p>
+            <p>
+                En particular, no se hace responsable en modo alguno de las caídas, interrupciones, falta o defecto de
+                las telecomunicaciones que pudieran ocurrir.
+            </p>
+
+            <h2 id="transacciones">TRANSACCIONES</h2>
+            <p>
+
+                Al momento de realizar una donación única o recurrente (Mensual o Anual), acepta pagar todas las tarifas o
+                cargos a su cuenta por el Servicio de acuerdo con las tarifas y cargos vigentes en el momento en el que
+                se realiza el donativo.
+                A menos que se indique lo contrario
+                en un formulario de donación, debe proporcionar a Fundación Redes de Ayuda una tarjeta de crédito válida
+                (Visa o MasterCard) como condición
+                para realizar su donativo.
+
+            </p>
+            <p>
+                Su acuerdo con el Emisor de la Tarjeta rige el uso de la cuenta de tarjeta de crédito designada, y debe
+                consultar ese acuerdo y no estos Términos para determinar sus derechos y responsabilidades con respecto
+                a su proveedor.
+            </p>
+            <p>
+                Al proporcionar a Fundación Redes de Ayuda su número de tarjeta de crédito y la información de pago
+                asociada, acepta que Fundación Redes de Ayuda está autorizado para verificar la información de inmediato
+                y, posteriormente, facturar a su cuenta
+                todas las tarifas y cargos adeudados y pagaderos a Fundación Redes de Ayuda a continuación y que no se
+                requiere ningún aviso o consentimiento adicional.
+
+            </p>
+            <p>
+                No existirá ningún contrato entre usted y Fundación
+                Redes de Ayuda para el Servicio hasta que Fundación Redes de Ayuda acepte su pedido mediante un correo
+                electrónico de confirmación, mensaje SMS u otro medio de comunicación apropiado. Usted es
+                responsable de las tarifas de terceros en las que pueda incurrir al utilizar el Servicio.
+            </p>
+            <h2 id="politica-de-reembolso">POLÍTICA DE REEMBOLSO</h2>
+            <p>
+                Fundación Redes de Ayuda desea proporcionar por todos los medios de su servicio una experiencia gratificante, segura y fácil para la realización de los donativos por medio del Sitio Web; si el usuario se encuentra en en la posición de haber donado una cantidad errónea o haber realizado un donativo por error, el usuario tiene el derecho de presentar su situación por medio de cualquiera de nuestros <a href="<?php echo $originUrl; ?>contacto" title="Métodos de Contacto">métodos de contacto.</a>
+            </p>
+            <p>
+                Para reclamar el reembolso total o parcial del valor del donativo se le consede un plazo de quince (15) días
+                luego de haberse realizado el mismo para presentar su solicitud por cualquiera de nuestros medios de
+                contacto vigentes, presentando las pruebas suficientes para que este pueda llevarse a cabo.
+            </p>
+            <h2 id="limitacion-de-responsabilidad">LIMITACIÓN DE RESPONSABILIDAD</h2>
+            <p>
+
+                Sin perjuicio de los daños en los que pueda incurrir, la responsabilidad total de Fundación Redes de
+                Ayuda y cualquiera de sus proveedores en virtud de cualquier disposición de este Acuerdo y su recurso
+                exclusivo por todo lo anterior se limitará al monto realmente pagado por usted para la plataforma.
+            </p>
+            <p>
+                En la máxima medida permitida por la ley aplicable, en ningún caso Fundación Redes de Ayuda o sus
+                proveedores serán responsables de ningún daño especial, incidental, indirecto o consecuente de ningún
+                tipo (incluidos, entre otros, daños por lucro cesante, por pérdida de datos u otra información, por
+                interrupción del negocio, por lesiones personales, por la pérdida de privacidad que surja de alguna
+                manera relacionada con el uso o la imposibilidad de usar la plataforma, software de terceros y / o -
+                hardware de terceros utilizado con la plataforma, o de otro modo en relación con cualquier disposición
+                de este Acuerdo), incluso si Fundación Redes de Ayuda o cualquier proveedor ha sido informado de la
+                posibilidad de tales daños e incluso si el recurso no cumple con su propósito esencial.
+            </p>
+            <p>
+                Algunos estados /jurisdicciones no permiten la exclusión o limitación de daños incidentales o
+                consecuentes, por lo que es posible que la limitación o exclusión anterior no se aplique en su caso.
+            </p>
+
+            <h2 id="politica-de-enlaces">POLÍTICA DE ENLACES</h2>
+            <p>
+                Se informa que el Sitio Web de Fundación Redes de Ayuda pone o puede poner a disposición de los Usuarios
+                medios de enlace (como, entre otros, links, banners, botones), directorios y motores de búsqueda que
+                permiten a los Usuarios acceder a sitios web
+                pertenecientes y/o gestionados por terceros.
+            </p>
+            <p>
+                La instalación de estos enlaces, directorios y motores de búsqueda en el Sitio Web tiene por objeto
+                facilitar a los Usuarios la búsqueda de y acceso a la información disponible en Internet, sin que pueda
+                considerarse una sugerencia, recomendación o invitación
+                para la visita de los mismos.
+            </p>
+            <p>
+                Fundación Redes de Ayuda no ofrece ni comercializa por sí ni por medio de terceros los productos y/o
+                servicios disponibles en dichos sitios enlazados. Asimismo, tampoco garantizará la disponibilidad técnica, exactitud, veracidad, validez o legalidad de
+                sitios ajenos a su propiedad a los que se pueda acceder por medio de los enlaces.
+            </p>
+            <p>
+                Fundación Redes de Ayuda en ningún caso revisará o controlará el contenido de otros sitios web, así como
+                tampoco aprueba, examina ni hace propios los productos y servicios, contenidos, archivos y cualquier
+                otro material existente en los referidos sitios
+                enlazados.
+            </p>
+            <p>
+                Fundación Redes de Ayuda no asume ninguna responsabilidad por los daños y perjuicios que pudieran
+                producirse por el acceso, uso, calidad o licitud de los contenidos, comunicaciones, opiniones, productos
+                y servicios de los sitios web no gestionados por
+                Fundación Redes de Ayuda y que sean enlazados en este Sitio Web.
+            </p>
+            <p>
+                El Usuario o tercero que realice un hipervínculo desde una página web de otro, distinto, sitio web al
+                Sitio Web de Fundación Redes de Ayuda deberá saber que: No se permite la reproducción —total o
+                parcialmente— de ninguno de los Contenidos y/o Servicios
+                del Sitio Web sin autorización expresa de Fundación Redes de Ayuda.
+            </p>
+            <p>
+                No se permite tampoco ninguna manifestación falsa, inexacta o incorrecta sobre el Sitio Web de Fundación
+                Redes de Ayuda, ni sobre los Contenidos y/o Servicios del mismo.
+            </p>
+            <p>
+
+                A excepción del hipervínculo, el sitio web en el que se establezca dicho hiperenlace no contendrá ningún
+                elemento, de este Sitio Web, protegido como propiedad intelectual por el ordenamiento jurídico español,
+                salvo autorización expresa de Fundación Redes
+                de Ayuda.
+            </p>
+            <p>
+                El establecimiento del hipervínculo no implicará la existencia de relaciones entre Fundación Redes de
+                Ayuda y el titular del sitio web desde el cual se realice, ni el conocimiento y aceptación de Fundación
+                Redes de Ayuda de los contenidos, servicios y/o
+                actividades ofrecidos en dicho sitio web, y viceversa.
+            </p>
+            <h2 id="servicios-de-terceros">SERVICIOS DE TERCEROS</h2>
+            <p>
+                Podemos mostrar, incluir o poner a disposición contenido de terceros (incluidos datos, información,
+                aplicaciones y otros servicios de productos) o proporcionar enlaces a sitios web o servicios de
+                terceros.
+            </p>
+            <p>
+                Usted reconoce y acepta que Fundación Redes de Ayuda no será responsable de ningún Servicio de terceros,
+                incluida su precisión, integridad, puntualidad, validez, cumplimiento de los derechos de autor,
+                legalidad, decencia, calidad o cualquier otro aspecto de los mismos. Fundación Redes de Ayuda no asume
+                ni tendrá ninguna obligación o responsabilidad ante usted o cualquier otra persona o entidad por los
+                Servicios de terceros.
+            </p>
+            <p>
+                Los Servicios de terceros y los enlaces a los mismos se brindan únicamente para su conveniencia y usted
+                accede a ellos y los usa completamente bajo su propio riesgo y sujeto a los términos y condiciones de
+                dichos terceros.
+            </p>
+            <h2 id="propiedad-intelectual-e-industrial">PROPIEDAD INTELECTUAL E INDUSTRIAL</h2>
+            <p>
+                Fundación Redes de Ayuda por sí o como parte cesionaria, es titular de todos los derechos de propiedad
+                intelectual e industrial del Sitio Web, así como de los elementos contenidos en el mismo (a título
+                enunciativo y no exhaustivo, imágenes, sonido, audio,
+                vídeo, software o textos, marcas o logotipos, combinaciones de colores, estructura y diseño, selección
+                de materiales usados, programas de software necesarios para su funcionamiento, acceso y uso, etc.).
+                Serán, por consiguiente, obras protegidas
+                como propiedad intelectual, siéndole aplicable las normativas guatemaltecas al respecto.
+            </p>
+            <p>
+
+                Usted acepta no hacerlo y no permitirá a otros:
+
+            </p>
+            <ul>
+                <li>Licenciar, vender, alquilar, arrendar, asignar, distribuir, transmitir, alojar, subcontratar,
+                    divulgar o explotar comercialmente la plataforma o poner la plataforma a disposición de terceros.</li>
+                <li>
+                    Modificar, realizar trabajos derivados, desensamblar, descifrar, realizar una compilación inversa o
+                    realizar ingeniería inversa de cualquier parte de la plataforma y/o recursos gráficos de la marca.
+                </li>
+                <li>
+                    Eliminar, alterar u ocultar cualquier aviso de
+                    propiedad (incluido cualquier aviso de derechos de autor o marca registrada) de sus afiliados,
+                    socios, proveedores o licenciatarios de la plataforma.
+                </li>
+                <li>
+                    Incumplir con las <a href="<?php echo $originUrl; ?>recursos-de-marca#guias-de-uso"></a> guías de uso de la marca en cualquier tipo de aplicación y/o variación de esta.
+                </li>
+                <li>
+                    Utilizar el nombre de Fundación Redes de Ayuda, recurso gráfico o frases similares al slogan "No dejes para mañana, la ayuda que puedas dar hoy. Prov. 3:28 DHH", incluyendo cualquier falta ortográfica.
+                </li>
+            </ul>
+            <p>
+                Todos los derechos reservados. En virtud de lo dispuesto en la Ley de Propiedad Intelectual, quedan
+                expresamente prohibidas la reproducción, la distribución y la comunicación pública, incluida su
+                modalidad de puesta a disposición, de la totalidad o parte
+                de los contenidos de esta página web, con fines comerciales, en cualquier soporte y por cualquier medio
+                técnico, sin la autorización de Fundación Redes de Ayuda.
+            </p>
+            <p>
+                El Usuario se compromete a respetar los derechos de propiedad intelectual e industrial de Fundación
+                Redes de Ayuda. Podrá visualizar los elementos del Sitio Web o incluso imprimirlos, copiarlos y
+                almacenarlos en el disco duro de su ordenador o en cualquier
+                otro soporte físico siempre y cuando sea, exclusivamente, para su uso personal. El Usuario, sin embargo,
+                no podrá suprimir, alterar, o manipular cualquier dispositivo de protección o sistema de seguridad que
+                estuviera instalado en el Sitio
+                Web.
+            </p>
+            <p>
+                En caso de que el Usuario o tercero considere que cualquiera de los Contenidos del Sitio Web suponga una
+                violación de los derechos de protección de la propiedad intelectual, deberá comunicarlo inmediatamente a
+                Fundación Redes de Ayuda a través de los
+                datos de contacto del apartado de INFORMACIÓN GENERAL de estos Términos y Condiciones Generales de Uso.
+            </p>
+            <h2 id="prevencion-de-fraude">PREVENCIÓN DE FRAUDE</h2>
+            <p>
+                Fundación Redes de Ayuda jamás bajo ninguna circunstancia se contactara con tu persona para solicitar
+                información delicada o personal, toda la información que el usuario proporciona es voluntaria y con
+                propositos de contacto, solicitud de ayuda o donación;
+                no aceptes o proporciones información a otra entidad que no sea un medio oficial de Fundación Redes de
+                Ayuda:
+            </p>
+            <ul>
+                <li>
+                    Todos nuestros medios de comunicación por correo electrónico poseen la terminación
+                    <b>"@fundacionredesdeayuda.org"</b>
+                </li>
+                <li>
+                    Nuesto único sitio web es: <a href="https://www.fundacionredesdeayuda.org">
+                        https://www.fundacionredesdeayuda.org</a>
+
+                </li>
+                <li>
+                    El número telefónico oficial es:
+                    <a href="tel:+50257744889" onClick="return(navigator.userAgent.match(/ Android | iPhone | mobile /i)) !=null;" title="Número Telefónico">
+                        +502 0948-3848</a>, el cual no tiene ningún costo en la llamada.
+                </li>
+                <li>
+                    Nuestras únicas redes sociales oficiales son las siguientes:
+                </li>
+                <ul>
+
+                    <li>
+
+                        Facebook: <a href="facebook.com">Fundación Redes de Ayuda</a>
+
+                    </li>
+                    <li>
+                        Instagram: <a href="facebook.com">@fundacionredesdeayuda</a>
+
+
+                    </li>
+                    <li>
+                        Telegram: <a href="facebook.com">Canal Oficial de Noticias</a>
+
+
+                    </li>
+                    <li>
+                        WhatsApp: <a href="facebook.com">+502 4344-4232 (Perfil de Empresa Certificado)</a>
+                    </li>
+                </ul>
+                <li>
+                    Nuestras Oficinas Centrales se encuentran ubicadas en: <a href="">Guatemala, Guatemala,
+                        Guatemala</a>
+                </li>
+            </ul>
+            <p>
+                Cualquier Información que no coincida con la previamente proporcionada no se considera legítima, por
+                favor, cuídese y aléjese de toda persona o entidad que intente usar nuestra imagen y/o hacerse pasar por
+                nuestra organización para usos ilícitos o ilegales,
+                cosa que será penada bajo la ley aplicable de la República de Guatemala; no proporcione ningún tipo de información
+                y no acepte ningún tipo de trato o solicitud bajo ninguna circunstancia.
+            </p>
+            <h2 id="acuerdo-de-arbitraje">ACUERDO DE ARBITRAJE</h2>
+            <p>
+
+                Esta sección se aplica a cualquier disputa. EXCEPTO A TODA QUE NO INCLUYE UNA DISPUTA RELACIONADA CON
+                RECLAMOS POR RECURSOS INJUNTIVOS O EQUITATIVOS CON RESPECTO A LA EJECUCIÓN O VALIDEZ DE SUS DERECHOS DE
+                PROPIEDAD INTELECTUAL O DE Fundación Redes de Ayuda.
+            </p>
+            <p>
+                El término "disputa" significa cualquier disputa, acción u otra controversia entre usted y Fundación
+                Redes de Ayuda en relación con los Servicios o este acuerdo, ya sea en contrato, garantía, agravio,
+                estatuto, regulación, ordenanza o cualquier otra base legal o equitativa. "Disputa" tendrá el
+                significado más amplio posible permitido por la ley.
+
+
+            </p>
+            <h2 id="aviso-de-disputa">AVISO DE DISPUTA</h2>
+
+            <p>
+                En el caso de una disputa, usted o Fundación Redes de Ayuda deben darle al otro un Aviso de Disputa, que
+                es una declaración escrita que establece el nombre, la dirección y la información de contacto de la
+                parte que la proporcionó, los hechos que dieron lugar a la disputa y la reparación solicitada.
+            </p>
+            <p>
+                Debe enviar cualquier Aviso de disputa por correo electrónico a: soporte@fundacionredesdeayuda.org.
+                Fundación Redes de Ayuda le enviará cualquier Aviso de disputa por correo a su dirección si la tenemos,
+                o de otra manera a su dirección de correo electrónico. Usted y Fundación Redes de Ayuda intentarán
+                resolver cualquier disputa mediante una negociación informal dentro de los sesenta (60) días a partir de
+                la fecha en que se envíe la Notificación de disputa. Después de sesenta (60) días, usted o Fundación
+                Redes de Ayuda pueden comenzar el arbitraje.
+            </p>
+            <h2 class="updated" id="arbitraje-obligatorio">ARBITRAJE OBLIGATORIO</h2>
+
+            <p class="updated">
+                Usted y Fundación Redes de Ayuda no resuelven ninguna disputa mediante una negociación informal,
+                cualquier otro esfuerzo para resolver la disputa se llevará a cabo exclusivamente mediante arbitraje
+                vinculante como se describe en esta sección. Está renunciando al derecho de litigar (o participar como
+                parte o miembro de la clase) todas las disputas en la corte ante un juez o jurado.
+            </p>
+            <p class="updated">
+                Cualquiera de las partes puede buscar medidas cautelares provisionales o preliminares de cualquier
+                tribunal de jurisdicción competente, según sea necesario para proteger los derechos o la propiedad de
+                las partes en espera de la finalización del arbitraje. Todos y cada uno de los costos, honorarios y
+                gastos legales, contables y de otro tipo en los que incurra la parte ganadora correrán a cargo de la
+                parte no ganadora.
+            </p>
+
+            <h2 id="acciones-legales-legislacion-aplicable-y-jurisdiccion">ACCIONES LEGALES, LEGISLACIÓN APLICABLE Y JURISDICCIÓN</h2>
+            <p>
+                Fundación Redes de Ayuda se reserva la facultad de presentar las acciones civiles o penales que
+                considere necesarias por la utilización indebida del Sitio Web y Contenidos, o por el incumplimiento de
+                las presentes Condiciones.
+            </p>
+            <p>
+                La relación entre el Usuario y Fundación Redes de Ayuda se regirá por la normativa vigente y de
+                aplicación en el territorio guatemalteco. De surgir cualquier controversia en relación con la
+                interpretación y/o a la aplicación de estas Condiciones las partes
+                someterán sus conflictos a la jurisdicción ordinaria sometiéndose a los jueces y tribunales que
+                correspondan conforme a derecho.
+            </p>
+            <p>
+                Las partes, con renuncia a su fuero propio, si ello fuera posible, se someten a los Juzgados y
+                Tribunales de la República de Guatemala siendo aplicable la ley de este país.
+            </p>
+            <p>
+                Si por alguna razón un tribunal de jurisdicción competente determina que alguna disposición o parte de
+                estos Términos y condiciones no se puede hacer cumplir el resto de estos Términos y condiciones
+                continuará en pleno vigor y efecto. Cualquier renuncia a cualquier disposición de estos Términos y
+                condiciones será efectiva solo si está por escrito y firmada por un representante autorizado de
+                Fundación Redes de Ayuda.
+            </p>
+            <p>
+                Fundación Redes de Ayuda tendrá derecho a una medida cautela u otra compensación equitativa (sin la
+                obligación de depositar ninguna fianza o garantía) en caso de incumplimiento anticipado por su parte.
+                Fundación Redes de Ayuda opera y controla el Servicio Fundación Redes de Ayuda desde sus oficinas
+                centrales en Guatemala.
+
+            </p>
+            <p>
+                El Servicio no está destinado a ser distribuido ni utilizado por ninguna persona o entidad en ninguna
+                jurisdicción o país donde dicha distribución o uso sea contrario a la ley o regulación. En consecuencia,
+                las personas que eligen acceder al Servicio Fundación Redes de Ayuda desde otras ubicaciones lo hacen
+                por iniciativa propia y son las únicas responsables del cumplimiento de las leyes locales, en la medida
+                en que las leyes locales sean aplicables.
+            </p>
+            <p>
+                Estos Términos y condiciones (que incluyen e incorporan la Política de privacidad de Fundación Redes de
+                Ayuda) contienen el entendimiento completo y reemplazan todos los entendimientos previos entre usted y
+                Fundación Redes de Ayuda con respecto a su tema, y usted no puede cambiarlos ni modificarlos.
+            </p>
+            <p>
+                Los títulos de las secciones que se utilizan en este Acuerdo son solo por conveniencia y no se les dará
+                ninguna importancia legal.
+            </p>
+            <h2 id="divisibilidad">DIVISIBILIDAD</h2>
+            <p>
+                Si alguna disposición de este Acuerdo se considera inaplicable o inválida, dicha disposición se cambiará
+                e interpretará para lograr los objetivos de dicha disposición en la mayor medida posible según la ley
+                aplicable y las disposiciones restantes continuarán en pleno vigor y efecto.
+            </p>
+            <p>
+                Este Acuerdo, junto con la Política de privacidad y cualquier otro aviso legal publicado por Fundación
+                Redes de Ayuda en los Servicios, constituirá el acuerdo completo entre usted y Fundación Redes de Ayuda
+                con respecto a los Servicios.
+            </p>
+            <p>
+                Si alguna disposición de este Acuerdo es considerada inválida por un tribunal de jurisdicción
+                competente, la invalidez de dicha disposición no afectará la validez de las disposiciones restantes de
+                este Acuerdo, que permanecerán en pleno vigor y efecto.
+            </p>
+            <p>
+                Ninguna renuncia a cualquier término de este Acuerdo se considerará una renuncia adicional o continua de
+                dicho término o cualquier otro término, y el hecho de que no haga valer ningún derecho o disposición en
+                virtud de este Acuerdo no constituirá una renuncia a dicho derecho o provisión. USTED ACEPTA QUE
+                CUALQUIER CAUSA DE ACCIÓN QUE SURJA O ESTÉ RELACIONADA CON LOS SERVICIOS DEBE COMENZAR DENTRO DE UN (1)
+                AÑO DESPUÉS DE QUE LA CAUSA DE ACCIÓN SE ACUERDA. DE LO CONTRARIO, DICHA CAUSA DE ACCIÓN ESTÁ
+                PERMANENTEMENTE PROHIBIDA.
+            </p>
+
+            <h2 id="renuncia">RENUNCIA</h2>
+            <p>
+                Salvo lo dispuesto en el presente, el hecho de no ejercer un derecho o exigir el cumplimiento de una
+                obligación en virtud de este Acuerdo no afectará la capacidad de una de las partes para ejercer dicho
+                derecho o requerir dicho cumplimiento en cualquier momento posterior, ni constituirá la renuncia a una
+                infracción. cualquier incumplimiento posterior.
+
+
+            </p>
+            <p>
+                Ninguna falla en el ejercicio, ni demora en el ejercicio, por parte de cualquiera de las partes, de
+                cualquier derecho o poder bajo este Acuerdo operará como una renuncia a ese derecho o poder. El
+                ejercicio único o parcial de cualquier derecho o poder en virtud de este Acuerdo tampoco impedirá el
+                ejercicio posterior de ese o cualquier otro derecho otorgado en este documento. En caso de conflicto
+                entre este Acuerdo y cualquier compra u otros términos aplicables, regirán los términos de este Acuerdo.
+
+
+            </p>
+            <h2 id="enmiendas-de-este-acuerdo">ENMIENDAS DE ESTE ACUERDO</h2>
+            <p>
+                Fundación Redes de Ayuda se reserva el derecho, a su entera discreción, de modificar o reemplazar este
+                Acuerdo en cualquier momento.
+            </p>
+            <p>
+                Si una revisión es importante, proporcionaremos un aviso de al menos 30 días antes de que entren en
+                vigencia los nuevos términos. Lo que constituye un cambio material se determinará a nuestro exclusivo
+                criterio.
+            </p>
+            <p>
+                Si continúa accediendo o utilizando nuestra plataforma después de que las revisiones entren en vigencia,
+                usted acepta estar sujeto a los términos revisados.
+            </p>
+            <p>
+                Si no está de acuerdo con los nuevos términos, ya no está autorizado para usar Fundación Redes de Ayuda.
+            </p>
+            <h2 id="acuerdo-completo">ACUERDO COMPLETO</h2>
+            <p>
+                El Acuerdo constituye el acuerdo completo entre usted y Fundación Redes de Ayuda con respecto a su uso
+                de la plataforma y reemplaza todos los acuerdos escritos u orales anteriores y contemporáneos entre
+                usted y Fundación Redes de Ayuda.
+            </p>
+
+            <h2 id="duracion-y-terminacion">DURACIÓN Y TERMINACIÓN</h2>
+            <p>
+
+                Este Acuerdo permanecerá en vigor hasta que usted o Fundación Redes de Ayuda lo rescindan. Fundación
+                Redes de Ayuda puede, a su entera discreción, en cualquier momento y por cualquier motivo o sin él,
+                suspender o rescindir este Acuerdo con o sin previo aviso.
+            </p>
+            <p>
+                Este Acuerdo terminará inmediatamente, sin previo aviso de Fundación Redes de Ayuda, en caso de que no
+                cumpla con alguna de las disposiciones de este Acuerdo. También puede rescindir este Acuerdo eliminando
+                la plataforma y todas las copias del mismo de su computadora. Tras la rescisión de este Acuerdo, deberá
+                dejar de utilizar la plataforma y eliminar todas las copias de la plataforma de su computadora.
+            </p>
+            <p>
+                La rescisión de este Acuerdo no limitará ninguno de los derechos o recursos de Fundación Redes de Ayuda
+                por ley o en equidad en caso de incumplimiento por su parte (durante la vigencia de este Acuerdo) de
+                cualquiera de sus obligaciones en virtud del presente Acuerdo.
+            </p>
+
+
+            <h2 id="indemnizacion">INDEMNIZACIÓN</h2>
+            <p>
+
+                Usted acepta indemnizar y eximir de responsabilidad a Fundación Redes de Ayuda y a sus empresas
+                matrices, subsidiarias, afiliadas, funcionarios, empleados, agentes, socios y otorgantes de licencias
+                (si corresponde) de cualquier reclamo o demanda, incluidos los honorarios razonables de abogados, debido
+                a que surja de su: (a) uso de la plataforma; (b) violación de este Acuerdo o cualquier ley o reglamento;
+                o (c) violación de cualquier derecho de un tercero.
+            </p>
+            <h2 id="sugerencias">SUGERENCIAS</h2>
+            <p>
+                Cualquier, comentario, idea, mejora o sugerencia (colectivamente, "Sugerencias") que usted proporcione a
+                Fundación Redes de Ayuda con respecto a la plataforma seguirá siendo propiedad única y exclusiva de
+                Fundación Redes de Ayuda y se tendrá la libertad de usar, copiar, modificar, publicar o redistribuir las
+                Sugerencias para cualquier propósito y de cualquier manera sin ningún crédito o compensación para usted
+                a menos que se pacte lo contrario.
+            </p>
+            <h2 id="envios-y-privacidad">ENVÍOS Y PRIVACIDAD</h2>
+            <p>
+
+                En el caso de que envíe o publique ideas, sugerencias creativas, diseños, fotografías, información,
+                anuncios, datos o propuestas, incluidas ideas para productos, servicios, funciones, tecnologías o
+                promociones nuevos o mejorados, acepta expresamente que dichos envíos se realizarán automáticamente será
+                tratado como no confidencial y no propietario y se convertirá en propiedad exclusiva de Fundación Redes
+                de Ayuda sin ningún tipo de compensación o crédito para usted.
+            </p>
+            <p>
+                Fundación Redes de Ayuda y sus afiliados no tendrán obligaciones con respecto a dichos envíos o
+                publicaciones y pueden usar las ideas contenidas en dichos envíos o publicaciones para cualquier
+                propósito en cualquier medio a perpetuidad, incluyendo, pero no limitado a desarrollo, fabricación, y
+                comercializar productos y servicios utilizando tales ideas.
+
+            <h2 id="aviso-de-infraccion-de-derechos-de-autor">AVISO DE INFRACCIÓN DE DERECHOS DE AUTOR</h2>
+            <p>
+                Si usted es propietario de los derechos de autor o el agente de dicho propietario y cree que cualquier
+                material de nuestra plataforma constituye una infracción de sus derechos de autor, comuníquese con
+                nosotros y proporcione la siguiente información: (a) una firma física o electrónica del propietario de
+                los derechos de autor o una persona autorizada para actuar en su nombre; (b) identificación del material
+                que se alega infringe; (c) su información de contacto, incluida su dirección, número de teléfono y un
+                correo electrónico; (d) una declaración suya de que cree de buena fe que el uso del material no está
+                autorizado por los propietarios de los derechos de autor; y (e) la declaración de que la información en
+                la notificación es precisa y, bajo pena de perjurio, usted está autorizado a actuar en nombre del
+                propietario.
+
+
+            </p>
+
+
+            <h2 id="modificaciones">MODIFICACIONES</h2>
+            <p>
+
+                Fundación Redes de Ayuda se reserva el derecho de efectuar sin previo aviso las modificaciones que
+                considere oportunas en su sitio Web, pudiendo cambiar, suprimir o añadir tanto los contenidos y
+                servicios que se presten a través de la misma como la forma
+                en la que éstos aparezcan presentados o localizados en su sitio Web.
+            </p>
+            <h2 id="actualizaciones">ACTUALIZACIONES</h2>
+            <p>Fundación Redes de Ayuda puede, de vez en cuando, proporcionar mejoras a las características /
+                funcionalidades de la plataforma, que pueden incluir parches, corrección de errores, actualizaciones,
+                mejoras y otras modificaciones. </p>
+            <p>
+                Las actualizaciones pueden modificar o eliminar ciertas características y / o funcionalidades de la
+                plataforma. Usted acepta que Fundación Redes de Ayuda no tiene la obligación de (i) proporcionar
+                Actualizaciones, o continuar proporcionándole o habilitando características y / o funcionalidades
+                particulares de la plataforma. Además, acepta que todas las Actualizaciones (i) se considerarán una
+                parte integral de la plataforma y (ii) estarán sujetas a los términos y condiciones de este Acuerdo.
+            </p>
+            <h2 id="promociones">PROMOCIONES</h2>
+            <p>
+
+                Fundación Redes de Ayuda puede, de vez en cuando, incluir concursos, sorteos u otras actividades que
+                requieren que envíe material o información sobre usted. Tenga en cuenta que todas las promociones pueden
+                regirse por reglas independientes que pueden contener ciertos requisitos de elegibilidad, como
+                restricciones de edad y ubicación geográfica. Usted es responsable de leer todas las reglas de
+                Promociones para determinar si es elegible para participar o no.
+            </p>
+            <p>
+
+                Si participa en alguna Promoción, acepta cumplir con todas las Reglas de promociones. Es posible que se
+                apliquen términos y condiciones adicionales a las compras de bienes o servicios a través de los
+                Servicios, cuyos términos y condiciones forman parte de este Acuerdo mediante esta referencia.
+            </p>
+
+            <h2 id="contacto">CONTACTE CON NOSOTROS</h2>
+            <p>
+                Si tiene alguna pregunta sobre nuestros Términos y Condiciones, puede ponerse en contacto con nosotros:
+
+            </p>
+            <ul>
+                <li>
+                    Por correo electrónico: <br>
+                    <a href="mailto:contacto@fundacionredesdeayuda.org">
+                        contacto@fundacionredesdeayuda.org</a>
+                </li>
+
+                <li>
+                    Visitando esta página en nuestro sitio web:
+                    <br> <a href="https://www.fundacionredesdeayuda.org"> https://www.fundacionredesdeayuda.org</a>
+                </li>
+
+                <li>
+                    Por número telefónico:
+                    <br><a href="tel:+50257744889" onClick="return(navigator.userAgent.match(/ Android | iPhone | mobile /i)) !=null;"> +502
+                        5783-8429</a>
+                </li>
+
+            </ul>
+
+
+
+
+        </section>
+
+
+
+    </main>
+
+
+    <div class="cookies" id="cookies">
+        <div class="cookies-container">
+        
+            <h3 class="h3">Aviso de Cookies</h3>
+            <p>Utilizamos cookies propias y de teceros para mejorar tu experiencia en nuestro sitio web.</p>
+            <form action="" class="form" id="form-cookies" method="POST">
+                <button class="btn" id="btn-cookies">Aceptar</button>
+                <button class="btn secondary" id="btn-cookies-nc">Solo las necesarias</button>
+            </form>
+            <div class="link flex green">
+                <a href="legal/politica-de-cookies.html" target="_BLANK">Ver política de cookies <i class="ri-external-link-line icon"></i></a>
+                
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="black-back">
+        <div class="footer-announce green-back">
+            <div class="footer-announce-container margin">
+                <div class="footer-announce-title">
+
+                    <h3 class="h3" class="h3">¿Deseas apoyar la causa?</h3>
+                    <p>Puedes visitar los anuncios que aparecen en nuestra plataforma o hacer una donación por medio de tu tarjeta de crédito/débito y PayPal</p>
+                </div>
+                <a href="http://paypal.com" target="_BLANK" class="btn btn-donation"><i class="ri-heart-fill icon"></i> Donar</a>
+            </div>
+        </div>
+        <div class="footer-container margin">
+            <div class="footer-logo">
+                <img src="../assets/logos/svg/theprincipal-logo-negativo.svg" alt="">
+                <p>Más Oportunidades</p>
+            </div>
+           
+            <div class="footer-list">
+                <h3 class="h3" class="h3">Legal</h3>
+                <ul>
+                    <li>
+                        <a href="terminos-y-condiciones.html">Términos y condiciones</a>
+                    </li>
+                    <li>
+                        <a href="politica-de-privacidad.html">Política de privacidad</a>
+                    </li>
+                    <li>
+                        <a href="politica-de-cookies.html">Política de cookies</a>
+                    </li>
+                    <li>
+                        <a href="../recursos-de-marca.html">Recursos de marca</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="footer-list">
+                <h3 class="h3" class="h3">Descubrir</h3>
+                <ul>
+                    <li>
+                        <a href="../categorias.html">Categorías</a>
+                    </li>
+                    <li>
+                        <a href="../cursos.html">Cursos</a>
+                    </li>                
+                    <li>
+                        <a href="../resumenes.html">Resúmenes</a>
+                    </li>
+                    <li>
+                        <a href="../servicios.html">Servicios</a>
+                    </li>
+                    <li>
+                        <a href="../promociones.html">Promociones</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-list">
+                <h3 class="h3" class="h3">Acerca de</h3>
+                <ul>
+                    
+                    <li>
+                        <a href="../nosotros.html">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="../contacto.html">Contacto</a>
+                    </li>
+                    <li>
+                        <a href="../patrocinadores.html">Patrocinadores</a>
+                    </li>
+                    <li>
+                        <a href="../mapa-de-sitio.html">Mapa de sitio</a>
+                    </li>
+                    <li>
+                        <a href="../preguntas-frecuentes.html">Preguntas frecuentes</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copy margin">
+            <p>Todos los Derechos Reservados. &copy; 2023 ThePrincipal™</p>
+        </div>
+        <div class="footer-note margin">
+            Plataforma orgullosamente guatemalteca <img src="../assets/gt.jpg" alt="">
+        </div>
+    </footer>
+    
+
+    
+</body>
+
+</html>

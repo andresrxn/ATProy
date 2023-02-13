@@ -1,0 +1,747 @@
+<!-- <?php include_once("../views/connection-user-two.php"); ?> -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-title" content="ThePrincipal" />
+    <meta name="application-name" content="ThePrincipal" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Title  -->
+    <title>Servicios | ThePrincipal™</title>
+    <meta name="description"
+        content="Descubre temas relacionados" />
+    <!--About-->
+    <meta name="author" content="ThePrincipal" />
+    <meta name="keywords"
+        content="blog, nuevo conocimiento, aprender gratis, capacitación online, oportunidades de estudiar" />
+
+    <!-- Preconnect  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Css  -->
+    <link defer rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css" integrity="sha512-okkLcBJE+U19Dpd0QdHA1wn4YY6rW3CwaxeLJT3Jmj9ZcNSbln/VYw8UdqXRIwLX7J8PmtHs0I/FPAhozFvXKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="../css/normalize.min.css" />
+    <link rel="stylesheet" href="../css/default.min.css" />
+    <link rel="stylesheet" href="legal.min.css">
+
+    <!-- Script Defer -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js" integrity="sha512-wdUM0BxMyMC/Yem1RWDiIiXA6ssXMoxypihVEwxDc+ftznGeRu4s9Fmxl8PthpxOh5CQ0eqjqw1Q8ScgNA1moQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    
+    <script defer src="../js/main.min.js"></script>
+    
+    <!-- <script defer src="js/categories.min.js"></script> -->
+        
+    <!-- <?php if (!isset($_COOKIE["cookies-accepted"])) { ?> -->
+        <script defer src="../js/cookies.min.js"></script>
+        <!-- <?php } ?> -->
+
+    <!-- <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PJ3MVCK');
+    </script> -->
+
+    <meta property="og:url" content="https://www.theprincipal.info" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Servicios | ThePrincipal™" />
+    <meta property="og:description"
+        content="Capacítate y expande tus conocimientos con los temas más relevantes de la web en un solo lugar" />
+    <meta property="og:image" content="img/social/fundacion-redes-de-ayuda-banner.jpg" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@ThePrincipal" />
+    <meta name="twitter:creator" content="@ThePrincipal" />
+    <meta name="twitter:title" content="Servicios | ThePrincipal™" />
+    <meta name="twitter:description"
+        content="Capacítate y expande tus conocimientos con los temas más relevantes de la web en un solo lugar" />
+    <!-- <meta name="twitter:image" content="img/social/fundacion-redes-de-ayuda-banner.jpg"> -->
+
+    <link rel="shortcut icon" href="../favicon.png" />
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+    <link rel="shortcut icon" sizes="32x32" href="../favicon-32x32.png" />
+    <link rel="shortcut icon" sizes="64x64" href="../favicon-64x64.png" />
+    <!-- <link rel="manifest" href="manifest.json" /> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
+    <!-- <link rel="manifest" href="site.webmanifest" /> -->
+    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5" />
+
+</head>
+
+<body class="change-back">
+
+
+
+    <header class="flex change-back" id="header">
+        <div class="header-container flex margin">
+            <div class="header-menu white-color" id="header-menu">
+                <i class="ri-menu-line icon"></i>
+            </div>
+            <nav class="header-nav" id="header-nav">
+                <ul class="change-back">
+                    <div class="header-nav-logo">
+                        <img src="../assets/logos/svg/theprincipal-logo.svg" alt="">
+                    </div>
+                    <li>
+                        <a href="../categorias.html" class="white-color">
+                            <div class="header-nav-name">
+
+                                <i class="ri-dashboard-line icon"></i>
+                                Categorías
+                            </div>
+                            <div class="header-nav-more">
+                                <i class="ri-arrow-right-line"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../cursos.html" class="white-color">
+                            <div class="header-nav-name">
+
+                                <i class="ri-medal-line icon"></i>
+                                Cursos
+                            </div>
+                            <div class="header-nav-more">
+                                <i class="ri-arrow-right-line"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../resumenes.html" class="white-color">
+                            <div class="header-nav-name">
+                                <i class="ri-book-open-line icon"></i>
+                                Resúmenes
+                            </div>
+                            <div class="header-nav-more">
+                                <i class="ri-arrow-right-line"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../servicios.html" class="white-color">
+                            <div class="header-nav-name">
+
+                                <i class="ri-briefcase-line icon"></i>
+                                Servicios
+                            </div>
+                            <div class="header-nav-more">
+                                <i class="ri-arrow-right-line"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../promociones.html" class="white-color">
+                            <div class="header-nav-name">
+
+                                <i class="ri-bookmark-3-line icon"></i>
+                                Promociones
+                                <div class="dot"></div>
+                            </div>
+                            <div class="header-nav-more">
+                                <i class="ri-arrow-right-line"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../nosotros.html" class="white-color">
+                            <div class="header-nav-name">
+
+                                <img src="../assets/logos/svg/theprincipal-isotipo-line-icono.svg" alt="">
+                                Nosotros
+                            </div>
+                            <div class="header-nav-more">
+                                <i class="ri-arrow-right-line"></i>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="header-nav-date">
+                    <div class="set-mode" id="set-mode">
+                        <input type="checkbox" class="set-mode-check" id="set-mode-check" />
+                        <label class="set-mode-label" for="set-mode-check">
+                            <i class="ri-moon-line icon"></i>
+                            <i class="ri-sun-line icon"></i>
+                            <span class="set-mode-ball"></span>
+                        </label>
+                    </div>
+                    <div> <span class="nav-date white-color"><i class="ri-calendar-line"></i> 3 de marzo, 2023 -</span> <a href="" class="white-color"><i title="¡Apóyanos!" class="ri-heart-fill icon-heart"></i> <span>Apóyanos</span></a></div>
+                </div>
+            </nav>
+            <a href="/" class="header-logo" id="header-logo">
+                <img  src="../assets/logos/svg/theprincipal-logo.svg" alt="" >
+            </a>
+            <div class="header-search" id="header-search">
+                <div class="form-control search">
+                    <form class="form" id="form-header-search" method="POST">
+
+                        <input type="search" id="header-input-search" name="" placeholder="Tecnología, actualidad, salud, etc.">
+                        <button class="btn form-control-search-btn flex" id="header-input-search-btn">
+                            <i class="ri-search-line icon"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="header-options flex white-color">
+                <div class="header-search-icon" title="Buscador" id="header-search-icon">
+                    <i class="ri-search-line icon"></i>
+                </div>
+                <a href="ingresar.html" class="header-account-icon flex" title="Perfil">
+                    <i class="ri-user-line icon"></i>                    
+                    <!-- CR -->                    
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+
+    <main>
+        <section class="content margin white-color">
+            <h1 class="h1">Política de Privacidad</h1>
+            <span class="created"> Actualizado: <time>9 de abril del 2022</time> </span>
+
+            <!-- <span class="version">Version 1.0</span> -->
+
+            <p>
+                Esta Política de privacidad se aplica solo a nuestras actividades en línea y es válida para los visitantes de nuestro sitio web con respecto a la información que compartieron y/o recopilaron en el mismo. Esta política no se aplica a
+                ninguna información recopilada fuera de línea o a través de canales que no sean este sitio web.
+            </p>
+            <p>
+                Esta política de privacidad describe nuestras políticas y procedimientos sobre la recopilación, el uso y la divulgación de sus datos cuando utiliza el Servicio y le informa sobre sus derechos de privacidad y cómo le protege la ley.
+            </p>
+
+            <p>
+                Utilizamos sus datos personales para proporcionar y mejorar el Servicio. Al aceptar la presente política por medio de cualquier formulario o , Usted acepta la recopilación y el uso de la información de acuerdo con esta Política de Privacidad.
+            </p>
+
+            <h2 id="interpretacion-y-definiciones">INTERPRETACIÓN Y DEFINICIONES</h2>
+            <h3>INTERPRETACIÓN</h3>
+            <p>
+                Las palabras cuya letra inicial está en mayúscula tienen el significado que se define a continuación. Las siguientes definiciones tendrán el mismo significado independientemente de que aparezcan en singular o en plural.
+            </p>
+            <h3>DEFINICIONES</h3>
+            <p>
+                A los efectos de esta Política de Privacidad:
+            </p>
+            <ul>
+                <li>
+                    <strong>Cuenta:</strong> significa una cuenta única creada para que Usted pueda acceder a nuestro Servicio o a partes de nuestro Servicio.
+                </li>
+
+                <li>
+                    <strong>Fundación:</strong> (referida como "la Fundación", "Nosotros", "Nos" o "Nuestra" en este Acuerdo) se refiere a Fundación Redes de Ayuda, con residencia en Guatemala, Guatemala, z17, Km.8 carretera al atlántico, Condominio
+                    Casa Florentina Premier, NIT: 124124-7.
+                </li>
+
+                <li>
+                    <strong>Cookies:</strong> son pequeños archivos que se colocan en su ordenador, dispositivo móvil o cualquier otro dispositivo por un sitio web, que contienen los detalles de su historial de navegación en ese sitio web entre sus muchos
+                    usos.
+                </li>
+                <li>
+                    <strong>País:</strong> se refiere a la República de Guatemala.
+                </li>
+
+                <li>
+                    <strong>Dispositivo:</strong> cualquier dispositivo que pueda acceder al Servicio, como una computadora, televisión, teléfono móvil o una tableta digital.
+                </li>
+
+                <li>
+                    <strong>Datos personales:</strong> cualquier información relacionada con un individuo identificado o identificable.
+                </li>
+
+                <li>
+                    <strong>Proveedor de Servicios:</strong> toda persona física o jurídica que procesa los datos en nombre de la Compañía. Se refiere a terceras empresas o personas físicas empleadas por la Empresa para facilitar el Servicio,
+                    para prestar el Servicio en nombre de la Empresa, para realizar servicios relacionados con el Servicio o para ayudar a la Empresa a analizar cómo se utiliza el Servicio.
+                </li>
+                <li>
+                    <strong>Los Datos de Uso:</strong> datos recogidos automáticamente, generados por el uso del Servicio o por la propia infraestructura del Servicio (por ejemplo, la duración de la visita a una página).
+                </li>
+                <li>
+                    <strong>Sitio web</strong> se refiere al sitio de Fundación Redes de Ayuda, accesible desde https://www.fundacionredesdeayuda.org
+                </li>
+                <li>
+                    <strong>Usted:</strong> persona física que accede o utiliza el Servicio, o a Fundación Redes de Ayuda, u otra entidad legal en nombre de la cual dicha persona física accede o utiliza el Servicio, según corresponda.
+                </li>
+            </ul>
+            <h2 id="recogida-y-uso-de-datos-personales">RECOGIDA Y USO DE SUS DATOS PERSONALES</h2>
+            <h3 id="tipos-de-datos-recogidos">TIPOS DE DATOS RECOGIDOS</h3>
+            <h4>Datos personales</h4>
+            <p>
+                Al utilizar nuestro Servicio, es posible que le pidamos que nos proporcione cierta información de identificación personal que pueda utilizarse para ponerse en contacto con usted o identificarle en un proceso predefinido acerca de nuestros servicios. La información personal identificable puede incluir, pero
+                no está limitada a:
+            </p>
+            <ul>
+                <li>
+                    Dirección de correo electrónico
+                </li>
+                <li>
+                    Nombre y apellidos
+                </li>
+                <li>
+                    Número de teléfono
+                </li>
+
+                <li>
+                    Dirección (País)
+                </li>
+
+            </ul>
+
+            <h4>Datos de uso</h4>
+            <p>
+                Los Datos de Uso se recogen automáticamente al utilizar el Servicio.
+            </p>
+            <p>
+                Los datos de uso pueden incluir información como la dirección de protocolo de Internet de su dispositivo (por ejemplo, la dirección IP), el tipo de navegador, la versión del navegador, las páginas de nuestro Servicio que usted visita, la hora y la fecha
+                de su visita, el tiempo que pasa en esas páginas, los identificadores únicos del dispositivo y otros datos de diagnóstico.
+            </p>
+            <p>
+                Cuando Usted accede al Servicio por o a través de un dispositivo móvil, podemos recopilar cierta información automáticamente, incluyendo, pero sin limitarse a, el tipo de dispositivo móvil que Usted utiliza, el identificador único de su dispositivo móvil,
+                la dirección IP de su dispositivo móvil, su sistema operativo móvil, el tipo de navegador de Internet móvil que Usted utiliza, los identificadores únicos del dispositivo y otros datos de diagnóstico.
+            </p>
+            <p>
+                También podemos recopilar la información que su navegador envía cada vez que visita nuestro Servicio o cuando accede al Servicio por o a través de un dispositivo móvil.
+            </p>
+
+            <h4> Tecnologías de seguimiento y cookies</h4>
+            <p>
+
+                Utilizamos cookies y tecnologías de seguimiento similares para rastrear la actividad en nuestro Servicio y almacenar cierta información. Una cookie es un pequeño archivo que se coloca en su dispositivo. Usted puede indicar a su navegador que rechace todas
+                las cookies o que le indique cuándo se envía una cookie. Sin embargo, si no acepta las Cookies, es posible que no pueda utilizar algunas partes de nuestro Servicio. A menos que usted haya ajustado la configuración de su navegador para
+                que rechace las Cookies, nuestro Servicio puede utilizar Cookies.
+            </p>
+
+            <p>
+                Para más información visita nuestra <a href="<?php echo $originUrl . "legal/"; ?>politica-de-cookies"> Política de Cookies</a>
+            </p>
+
+
+
+
+            <h3 id="uso-de-sus-datos-personales">USO DE SUS DATOS PERSONALES</h3>
+            <p>
+                Fundación Redes de Ayuda puede utilizar los datos personales para los siguientes fines:
+            </p>
+            <ul>
+                <li>
+                    <strong>Para proporcionar y mantener nuestro Servicio:</strong> incluyendo la supervisión del uso de nuestro Servicio.
+                </li>
+                <li>
+                    <strong>Para gestionar su cuenta:</strong> para gestionar su registro como usuario del Servicio. Los Datos Personales que usted proporciona pueden darle acceso a diferentes funcionalidades del Servicio que están disponibles para usted
+                    como usuario registrado.
+                </li>
+                <li>
+                    <strong>Para la ejecución de un contrato:</strong> el desarrollo, cumplimiento y realización del contrato de proporción de ayuda y/o patrocinio.
+                </li>
+                <li>
+                    <strong>Para contactar con usted:</strong> por correo electrónico, llamadas telefónicas, SMS, redes sociales, u otras formas equivalentes de comunicación electrónica, como las notificaciones push de una aplicación
+                    móvil sobre actualizaciones o comunicaciones informativas relacionadas con las funcionalidades, productos o servicios contratados, incluyendo las actualizaciones de seguridad, cuando sea necesario o razonable para su puesta en marcha.
+                </li>
+                <li>
+                    <strong>Para proporcionarle noticias:</strong> ofertas especiales e información general sobre otros bienes, servicios y eventos que ofrecemos y que son similares a los que ya ha comprado o sobre los que ha preguntado, a menos que
+                    haya optado por no recibir dicha información.
+                </li>
+                <li>
+                    <strong>Gestionar sus solicitudes:</strong> para atender y gestionar sus solicitudes a nuestra Fundación.
+                </li>
+                <li>
+                    <strong>Para transacciones de donación:</strong> Podemos utilizar su información para evaluar o llevar a cabo una fusión, desinversión, reestructuración, reorganización, disolución o transferencia de algunos o todos nuestros activos,
+                    ya sea como fundación o como parte de un procedimiento de quiebra, liquidación o similar, en el que los Datos Personales que tenemos sobre nuestros usuarios del Servicio se encuentran entre los activos transferidos.
+                </li>
+                <li>
+                    <strong>Para otros fines:</strong> podemos utilizar Su información para otros fines, como el análisis de datos, la identificación de tendencias de uso, la determinación de la eficacia de nuestras campañas promocionales y para evaluar
+                    y mejorar nuestro Servicio, productos, servicios, marketing y su experiencia.
+                </li>
+
+
+            </ul>
+            <p>
+                Podemos compartir su información personal en las siguientes situaciones:
+            </p>
+            <ul>
+                <li>
+                    <strong>Con proveedores de servicios:</strong> Podemos compartir Su información personal con Proveedores de Servicios para monitorear y analizar el uso de nuestro Servicio, para contactarlo.
+                </li>
+                <li>
+                    <strong>Para transferencias de donación:</strong> Podemos compartir o transferir Su información personal en relación con, o durante las negociaciones de, cualquier fusión o adquisición de todo o parte de nuestra Fundación a otra empresa
+                    o sociedad.
+                </li>
+                <li>
+                    <strong>Con los patrocinadores:</strong> Podemos compartir su información con nuestras filiales, en cuyo caso exigiremos a dichas filiales que respeten esta política de privacidad. Las filiales incluyen a nuestra Fundación matriz y
+                    a cualquier otra subsidiaria, socio de una empresa conjunta u otras empresas que controlemos o que estén bajo control común con nosotros.
+                </li>
+                <li>
+                    <strong>Con su consentimiento:</strong> Podemos revelar Su información personal para cualquier otro propósito siempre y cuando contemos con Su consentimiento.
+                </li>
+
+            </ul>
+            <h3 id="retencion-de-sus-datos-personales">RETENCIÓN DE SUS DATOS PERSONALES</h3>
+            <p>
+                Fundación Redes de Ayuda retendrá Sus Datos Personales sólo durante el tiempo que sea necesario para los fines establecidos en esta Política de Privacidad. Conservaremos y utilizaremos Sus Datos Personales en la medida necesaria para cumplir con nuestras obligaciones
+                legales (por ejemplo, si estamos obligados a conservar sus datos para cumplir con las leyes aplicables), resolver disputas y hacer cumplir nuestros acuerdos y políticas legales.
+            </p>
+            <p>
+                También, Fundación Redes de Ayuda conservará los datos de uso para fines de análisis interno. Por lo general, los Datos de Uso se conservan durante un período de tiempo más corto, excepto cuando estos datos se utilizan para reforzar la seguridad o mejorar la funcionalidad
+                de Nuestro Servicio, o cuando estamos legalmente obligados a conservar estos datos durante períodos de tiempo más largos.
+            </p>
+
+            <h3 id="transferencia-de-sus-datos-personales">TRANSFERENCIA DE SUS DATOS PERSONALES</h3>
+            <p>
+                Su información, incluidos los datos personales, se procesa en las oficinas operativas de la empresa y en cualquier otro lugar donde se encuentren las partes implicadas en el procesamiento. Esto significa que esta información puede ser transferida y mantenida
+                en ordenadores situados fuera de su estado, provincia, país u otra jurisdicción gubernamental donde las leyes de protección de datos pueden ser diferentes a las de su jurisdicción.
+            </p>
+            <p>
+                Su consentimiento a esta Política de Privacidad, seguido de su envío de dicha información, representa su acuerdo con dicha transferencia. Fundación Redes de Ayuda tomará todas las medidas razonablemente necesarias para garantizar que sus datos sean tratados de forma
+                segura y de acuerdo con esta Política de Privacidad y no se realizará ninguna transferencia de sus Datos Personales a una organización o país a menos que existan controles adecuados que incluyan la seguridad de sus datos y otra información
+                personal.
+            </p>
+            <h3 id="divulgacion-de-sus-datos-personales">DIVULGACIÓN DE SUS DATOS PERSONALES</h3>
+
+            <p>
+                Si Fundación Redes de Ayuda participa en una fusión o adquisición, sus datos personales pueden ser transferidos. Le notificaremos antes de que sus datos personales sean transferidos y queden sujetos a una política de privacidad diferente.
+            </p>
+
+            <p>
+                En determinadas circunstancias, Fundación Redes de Ayuda puede verse obligada a revelar sus datos personales si así lo exige la ley o en respuesta a solicitudes válidas de las autoridades públicas (por ejemplo, un tribunal o una agencia gubernamental).
+            </p>
+
+            <p>
+                Fundación Redes de Ayuda puede revelar sus datos personales si cree de buena fe que dicha acción es necesaria para:
+            </p>
+            <ul>
+                <li>
+                    Cumplir con una obligación legal
+                </li>
+                <li>
+                    Proteger y defender los derechos o la propiedad de Fundación Redes de Ayuda
+                </li>
+                <li>
+                    Proteger la seguridad personal de los Usuarios del Servicio o del público
+                </li>
+                <li>
+                    Prevenir o investigar posibles infracciones en relación con el Servicio
+                </li>
+
+                <li>
+                    Proteger contra la responsabilidad legal
+                </li>
+
+            </ul>
+            <p>
+
+
+            </p>
+            <h3 id="seguridad-de-sus-datos-personales">SEGURIDAD DE SUS DATOS PERSONALES</h3>
+            <p>
+                La seguridad de sus Datos Personales es importante para Nosotros, sin embargo, debe tener en cuenta que ningún método de transmisión por Internet, o método de almacenamiento electrónico es 100% seguro. Aunque nos esforzamos por utilizar medios seguros de transacciones aceptables
+                para proteger sus datos personales, no podemos garantizar su seguridad absoluta.
+            </p>
+            <p>Al crear una cuenta, el usuario es el único responsable de mantener y preservar la confidencialidad de los datos, Fundación Redes de Ayuda no se hace responsable del mal uso personal que se le dé a dicha información, sino únicamente limitandose a proveer un ambiente seguro dentro del sitio web para preservar la privacidad y mantenimiento de la información proveida y guardada por el usuario.</p>
+            <p></p>
+            <h2 id="derechos-de-privacidad-ccpa">DERECHOS DE PRIVACIDAD DE LA CCPA<span>(No Vender la Información Personal)</span>
+            </h2>
+
+            <p>
+                Según la CCPA, entre otros derechos, los consumidores de California tienen derecho a:
+            </p>
+            <ul>
+                <li>
+                    Solicitar que una empresa que recopila los datos personales de un consumidor divulgue las categorías y piezas específicas de datos personales que una empresa ha recopilado sobre los consumidores.
+                </li>
+                <li>
+                    Solicitar que una empresa elimine cualquier dato personal sobre el consumidor que haya recopilado una empresa.
+                </li>
+                <li>
+                    Solicitar que una empresa que vende los datos personales de un consumidor no venda los datos personales del consumidor.
+                </li>
+                <li>
+                    Si realiza una solicitud, tenemos un máximo de 15 días para responderle. Si desea ejercer alguno de estos derechos,<a href="#contacto"> comuníquese con nosotros.</a>
+                </li>
+
+            </ul>
+            <h2 id="derechos-de-proteccion-de-datos-rgpd">DERECHOS DE PROTECCIÓN DE DATOS DEL RGPD <span>(Reglamento General de Protección de Datos)</span></h2>
+            <p>
+                Nos gustaría asegurarnos de que conoce todos sus derechos de protección de datos. Todo usuario tiene derecho a lo siguiente:
+            </p>
+            <ul>
+                <li>
+                    <strong>El derecho de acceso:</strong> tiene derecho a solicitar copias de sus datos personales.
+                </li>
+                <li>
+                    <strong>El derecho a la rectificación:</strong> tiene derecho a solicitar que corrijamos cualquier información que crea que es inexacta. También tiene derecho a solicitar que completemos la información que cree que está incompleta.
+                </li>
+                <li>
+                    <strong>El derecho a borrar:</strong> tiene derecho a solicitar que borremos sus datos personales, bajo ciertas condiciones.
+                </li>
+                <li>
+                    <strong>El derecho a restringir
+                        el procesamiento:</strong> tiene derecho a solicitar que restrinjamos el procesamiento de sus datos personales, bajo ciertas condiciones.
+                </li>
+                <li>
+                    <strong>El derecho a oponerse al procesamiento:</strong> tiene derecho a oponerse a nuestro procesamiento de sus datos personales, bajo ciertas condiciones.
+                </li>
+                <li>
+                    <strong>El derecho a la portabilidad de datos:</strong> tiene derecho a solicitar que transfiramos los datos que hemos recopilado a otra organización, o directamente a usted, bajo ciertas condiciones.
+                </li>
+                <li>
+                    Si realiza una solicitud, tenemos 15 días para responderle. Si desea ejercer alguno de estos derechos,<a href="#contacto"> comuníquese con nosotros.</a>
+                </li>
+
+            </ul>
+            <h2 id="ley-de-proteccion-caioppa">LEY DE PROTECCIÓN DE LA PRIVACIDAD EN LÍNEA DE CALIFORNIA <span>(CaIOPPA)</span> </h2>
+            <p>
+                CaIOPPA requiere que divulguemos las categorías de información personal que recopilamos y cómo la usamos, las categorías de fuentes de las que recopilamos la información personal y los terceros con quienes la compartimos, lo cual explicamos anteriormente.
+
+            </p>
+            <p>
+
+                Los usuarios de CaIOPPA tienen los siguientes derechos:
+
+            </p>
+            <ul>
+                <li>
+                    <strong>Derecho a conocer y acceder:</strong> Puede enviar una solicitud verificable de información con respecto a: (1) categorías de Información personal que recopilamos, usamos o compartimos; (2) fines para los que recopilamos o utilizamos categorías de información personal; (3) categorías de fuentes de las que recopilamos información personal; y (4) piezas específicas de información personal que hemos recopilado sobre usted.
+                </li>
+                <li>
+                    <strong>Derecho a la igualdad de servicio:</strong>
+                    No lo discriminaremos si ejerce sus derechos de privacidad.
+                </li>
+                <li>
+                    <strong>Derecho a eliminar:</strong>
+                    Puede enviar una solicitud verificable para cerrar su cuenta y eliminaremos la Información personal sobre usted que hayamos recopilado.
+                </li>
+                <li>
+                    <strong> Derecho a solicitar que no se venda su información</strong>
+                    Solicitar que una empresa que vende los datos personales de un consumidor, no venda los datos personales del consumidor.
+                </li>
+            </ul>
+            <p>
+                Si realiza una solicitud, tenemos treinta (30) días para responderle. Si desea ejercer alguno de estos derechos, comuníquese con nosotros. No vendemos la información personal de nuestros usuarios. Para obtener más información sobre estos derechos, comuníquese con nosotros.
+            </p>
+
+
+            <h2 id="transacciones">TRANSACCIONES</h2>
+            <p>
+                Las transacciones, cambios y cualquier tipo de movimiento que involucre su tarjeta de crédito junto con sus datos sensibles que proporcione cuando sea necesario se almacena en la base de datos del proveedor del servicio de transacción a disposición:
+            </p>
+            <ul>
+                <li>QpayPro: <a href="">Política de Privacidad de QpayPro</a></li>
+            </ul>
+            <p>El cual cuenta con un certificado PCI DSS y Cybersource, asegurando la protección y seguridad de información que proporciona por medio la encriptación de datos.</p>
+            <p>Bajo ninguna circunstancia se harán cobros que no sean previamente autorizados por el usuario. Fundación Redes de Ayuda nunca solicitará información acerca de la tarjeta o del tarjeta habiente, cada transacción es encriptada y protegida bajo los estándares de seguridad antes mencionados.</p>
+            <p>Si el usuario decide guardar los datos de su tarjeta para ser recordados en la posterioridad al momento de realizar su transacción, será almacenada la información en la base de datos de nuestros proveedor mas no en la nuestra.</p>
+            <p>El usuario puede eliminar en el momento que desee la tarjeta asociada a su cuenta y cancelar cualquier tipo de transacción recurrente que tenga activa a través de su cuenta o por medio del link del correo de confirmación recibido al momento de efectuar su donación.</p>
+
+            <h2 id="privacidad-de-menores-de-trece-años">PRIVACIDAD DE MENORES DE TRECE(13) AÑOS</h2>
+            <p>
+                Nuestro Servicio no se dirige a personas menores de 13 años. No recopilamos conscientemente información personal identificable de menores de 13 años. Si usted es un padre o tutor y tiene conocimiento de que su hijo nos ha proporcionado datos personales,
+                póngase en contacto con nosotros. Si tenemos conocimiento de que hemos recopilado Datos Personales de cualquier persona menor de 13 años sin verificar el consentimiento de los padres, tomaremos medidas para eliminar esa información de
+                nuestros servidores.
+            </p>
+            <p>
+                Si tenemos que basarnos en el consentimiento como base legal para procesar su información y su país requiere el consentimiento de uno de los padres, podemos requerir el consentimiento de sus padres antes de recopilar y utilizar esa información.
+            </p>
+            <h2 id="enlaces-a-otros-sitios-web">ENLACES A OTROS SITIOS WEB</h2>
+            <p>
+                Nuestro Servicio puede contener enlaces a otros sitios web que no son operados por nosotros. Si hace clic en un enlace de un tercero, será dirigido al sitio de ese tercero. Le recomendamos encarecidamente que revise la política de privacidad de cada sitio
+                que visite.
+            </p>
+            <p>
+                Para fines prácticos, se utiliza el inicio de sesión con Facebook y Google, donde al usuario se le dirige a un enlace externo que valide sus datos, entre los cuales son utilizados:
+            </p>
+            <ul>
+                <li>Nombre</li>
+                <li>Apellido</li>
+                <li>Correo electrónico</li>
+            </ul>
+            <p>
+                No se utiliza ni se requiere la contraseña, ni datos sensibles del usuario, manteinendo su privacidad, limitándonos únicamente a los datos básicos proveídos por cada plataforma.
+            </p>
+            <p>
+                No tenemos ningún control ni asumimos ninguna responsabilidad por el contenido, las políticas de privacidad o las prácticas de los sitios o servicios de terceros, las cuales se detallan a continuación:
+            </p>
+            <ul>
+                <li>
+                    <strong>Facebook:</strong> <a href="https://www.facebook.com/privacy/policy/?entry_point=data_policy_redirect&entry=0">https://www.facebook.com/privacy/policy/?entry_point=data_policy_redirect&entry=0</a>
+                </li>
+                <li>
+                    <strong>Google:</strong> <a href="https://policies.google.com/privacy?hl=es-GT&fg=1">https://policies.google.com/privacy?hl=es-GT&fg=1</a>
+                </li>
+            </ul>
+            <h2 id="cambios-de-la-politica-de-privacidad">CAMBIOS DE LA POLÍTICA DE PRIVACIDAD</h2>
+            <p>
+                Podemos actualizar nuestra política de privacidad regularmente y/o cuando sea necesario.
+            </p>
+            <p>
+                Todos los cambios serán notificados en nuestras redes sociales y en un aviso en la parte superior de nuestro sitio web. Le recomendamos que revise periódicamente esta política de privacidad para comprobar si se han producido cambios. Los cambios en esta
+                Política de Privacidad son efectivos cuando se publican en esta página.
+            </p>
+
+            <h2 id="contacto">CONTACTE CON NOSOTROS</h2>
+            <p>
+                Si tiene alguna pregunta sobre nuestra Política de Privacidad, puede ponerse en contacto con nosotros:
+
+            </p>
+            <ul>
+                <li>
+                    Por correo electrónico: <br>
+                    <a href="mailto:contacto@fundacionredesdeayuda.org">
+                        contacto@fundacionredesdeayuda.org</a>
+                </li>
+
+                <li>
+                    Visitando esta página en nuestro sitio web:
+                    <br> <a href="https://www.fundacionredesdeayuda.org"> https://www.fundacionredesdeayuda.org</a>
+                </li>
+
+                <li>
+                    Por número telefónico:
+                    <br><a href="tel:+50257744889" onClick="return(navigator.userAgent.match(/ Android | iPhone | mobile /i)) !=null;"> +502 5783-8429</a>
+                </li>
+
+            </ul>
+
+
+
+        </section>
+
+
+
+    </main>
+
+
+    <div class="cookies" id="cookies">
+        <div class="cookies-container">
+        
+            <h3 class="h3">Aviso de Cookies</h3>
+            <p>Utilizamos cookies propias y de teceros para mejorar tu experiencia en nuestro sitio web.</p>
+            <form action="" class="form" id="form-cookies" method="POST">
+                <button class="btn" id="btn-cookies">Aceptar</button>
+                <button class="btn secondary" id="btn-cookies-nc">Solo las necesarias</button>
+            </form>
+            <div class="link flex green">
+                <a href="legal/politica-de-cookies.html" target="_BLANK">Ver política de cookies <i class="ri-external-link-line icon"></i></a>
+                
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="black-back">
+        <div class="footer-announce green-back">
+            <div class="footer-announce-container margin">
+                <div class="footer-announce-title">
+
+                    <h3 class="h3" class="h3">¿Deseas apoyar la causa?</h3>
+                    <p>Puedes visitar los anuncios que aparecen en nuestra plataforma o hacer una donación por medio de tu tarjeta de crédito/débito y PayPal</p>
+                </div>
+                <a href="http://paypal.com" target="_BLANK" class="btn btn-donation"><i class="ri-heart-fill icon"></i> Donar</a>
+            </div>
+        </div>
+        <div class="footer-container margin">
+            <div class="footer-logo">
+                <img src="../assets/logos/svg/theprincipal-logo-negativo.svg" alt="">
+                <p>Más Oportunidades</p>
+            </div>
+           
+            <div class="footer-list">
+                <h3 class="h3" class="h3">Legal</h3>
+                <ul>
+                    <li>
+                        <a href="terminos-y-condiciones.html">Términos y condiciones</a>
+                    </li>
+                    <li>
+                        <a href="politica-de-privacidad.html">Política de privacidad</a>
+                    </li>
+                    <li>
+                        <a href="politica-de-cookies.html">Política de cookies</a>
+                    </li>
+                    <li>
+                        <a href="../recursos-de-marca.html">Recursos de marca</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="footer-list">
+                <h3 class="h3" class="h3">Descubrir</h3>
+                <ul>
+                    <li>
+                        <a href="../categorias.html">Categorías</a>
+                    </li>
+                    <li>
+                        <a href="../cursos.html">Cursos</a>
+                    </li>                
+                    <li>
+                        <a href="../resumenes.html">Resúmenes</a>
+                    </li>
+                    <li>
+                        <a href="../servicios.html">Servicios</a>
+                    </li>
+                    <li>
+                        <a href="../promociones.html">Promociones</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-list">
+                <h3 class="h3" class="h3">Acerca de</h3>
+                <ul>
+                    
+                    <li>
+                        <a href="../nosotros.html">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="../contacto.html">Contacto</a>
+                    </li>
+                    <li>
+                        <a href="../patrocinadores.html">Patrocinadores</a>
+                    </li>
+                    <li>
+                        <a href="../mapa-de-sitio.html">Mapa de sitio</a>
+                    </li>
+                    <li>
+                        <a href="../preguntas-frecuentes.html">Preguntas frecuentes</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copy margin">
+            <p>Todos los Derechos Reservados. &copy; 2023 ThePrincipal™</p>
+        </div>
+        <div class="footer-note margin">
+            Plataforma orgullosamente guatemalteca <img src="../assets/gt.jpg" alt="">
+        </div>
+    </footer>
+    
+
+    
+</body>
+
+</html>
