@@ -1,0 +1,282 @@
+main {
+    overflow: initial;
+}
+
+.banner {
+    background: url('../assets/logos/fondo.svg');
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    color: var(--blanco);
+    text-shadow: 2px 2px 8px #121212;
+    /* overflow: hidden; */
+}
+
+.banner .btn-group {
+    text-shadow: none;
+    margin-top: 13px;
+    position: relative;
+    z-index: 1000;
+}
+
+.banner .section-title {
+    height: 100%;
+    width: 100%;
+    padding: 0 5%;
+    margin-bottom: 0;
+    flex-direction: column;
+    background: #00000045;
+}
+
+.banner .section-title * {
+    position: relative;
+    z-index: 1000;
+}
+
+.banner::after {
+    content: "";
+    background: linear-gradient(to top, #eeeeee, #eeeeee70, #eeeeee00);
+    height: 180px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.history {
+    padding-top: 60px;
+}
+
+.history-card {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.history .history-card:last-child {
+    border: none;
+}
+
+.history-card p {
+    font-size: 1.1em;
+}
+
+.history img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: inline-block;
+}
+
+.timeline {
+    padding-left: 25px;
+    display: grid;
+    margin-top: 10px;
+    gap: 25px;
+}
+
+.timeline li::marker {
+    color: var(--verde);
+    font-size: 1.5em;
+}
+
+.timeline span {
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+.timeline p {
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+.values {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 40px;
+    padding-bottom: 80px;
+}
+
+.value-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: var(--verde);
+    background: #00943c20;
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+.value-des h3 {
+    margin-bottom: 7px;
+}
+
+@media screen and (min-width:760px) {
+    .banner .section-title p {
+        width: 85%;
+    }
+
+    .banner {
+        height: 550px;
+    }
+
+    .banner::after {
+        height: 450px;
+    }
+
+    .history img {
+        height: 300px;
+    }
+
+    .value-icon {
+        width: 80px;
+        height: 80px;
+        font-size: 2em;
+    }
+
+    .history-card {
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .banner .section-title p {
+        width: 80%;
+        max-width: 650px;
+    }
+
+    .history-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 50px;
+        position: relative;
+    }
+
+    .history-card h2 {
+        font-size: 2.2em;
+    }
+
+    .history-card-title {
+        position: sticky;
+        top: 70px;
+    }
+
+    .history-card>div {
+        width: 50%;
+    }
+
+    .banner {
+        height: 550px;
+    }
+
+    .banner::after {
+        height: 300px;
+    }
+
+    .history img {
+        height: 300px;
+    }
+
+    .history-card.big p {
+        font-size: 1.3em;
+        line-height: 1.5;
+    }
+
+    .value-des h3 {
+        font-size: 1.4em;
+    }
+
+    .value-icon {
+        width: 80px;
+        height: 80px;
+        font-size: 2em;
+    }
+
+    .history-card p {
+        font-size: 1.1em;
+    }
+
+    .timeline {
+        gap: 40px;
+    }
+
+    .history-card {
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+
+    .history-card-content {
+        padding-top: 50px;
+    }
+
+    .history {
+        padding-bottom: 60px;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    .banner .section-title p {
+        max-width: 750px;
+    }
+
+    .banner .btn-group {
+        font-size: 1.2em;
+        margin-top: 15px;
+    }
+
+    .banner {
+        height: 600px;
+    }
+
+    .history {
+        width: 90%;
+        margin: auto;
+    }
+
+    .history-card h2 {
+        font-size: 2.5em;
+    }
+
+    .banner::after {
+        height: 320px;
+    }
+
+    .history img {
+        height: 350px;
+    }
+
+    .history-card-title {
+        top: 90px;
+    }
+
+    .history-card.big p {
+        font-size: 1.5em;
+    }
+
+    .value-des h3 {
+        font-size: 1.4em;
+    }
+
+    .value-icon {
+        width: 80px;
+        height: 80px;
+        font-size: 2em;
+    }
+
+    .history-card span {
+        font-size: 2em;
+    }
+
+    .history-card p {
+        font-size: 1.2em;
+    }
+
+    .history-card-content {
+        padding-top: 70px;
+    }
+}

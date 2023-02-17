@@ -1,5 +1,6 @@
 .section-title p {
     margin-bottom: 15px;
+    margin-top: 4px;
 }
 
 section {
@@ -7,7 +8,7 @@ section {
 }
 
 .banner {
-    padding-top: 70px;
+    padding-top: 40px;
 }
 
 .banner:after {
@@ -109,6 +110,7 @@ section {
     padding-top: 30px;
     overflow: hidden;
     padding-bottom: 65px;
+    max-width: 500px;
 }
 
 .service-img {
@@ -163,7 +165,7 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, #090909, #09090900);
+    background: linear-gradient(to top, #000000, #09090900);
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -171,10 +173,12 @@ section {
     font-size: 0.95em;
     border-radius: 7px;
     color: var(--blanco);
+    transition: 0.3s ease;
     text-shadow: 2px 2px 4px #121212;
 }
 
 .services .link {
+    margin-top: 20px;
     margin-bottom: 50px;
 }
 
@@ -186,13 +190,35 @@ section {
     width: 100%;
     position: relative;
     overflow: auto;
+    margin: 20px 0;
 }
 
 .clients-slider::-webkit-scrollbar {
     display: none;
 }
 
+.clients-slider::after,
+.clients-slider::before {
+    content: "";
+    width: 40px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+}
+
+.clients-slider::before {
+    background: linear-gradient(to right, #fff, #ffffff00);
+    left: 0;
+}
+
+.clients-slider::after {
+    background: linear-gradient(to left, #fff, #ffffff00);
+    right: 0;
+}
+
 .clients-container {
+    position: relative;
     width: max-content;
     justify-content: flex-start;
     gap: 35px;
@@ -205,60 +231,341 @@ section {
     pointer-events: auto;
     position: relative;
     z-index: 1000;
-    min-height: 100px;
+    height: 70px;
     text-decoration: none;
     width: 120px;
-    object-fit: contain;
-    opacity: 0.6;
     transition: opacity 0.2s ease;
+}
+
+.client-slider-card img {
+    filter: grayscale(2);
+    opacity: 0.7;
+    object-fit: contain;
+    height: 100%;
 }
 
 .contact-animations {
     position: relative;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
     /* padding-top: 20px; */
+    pointer-events: none;
 }
 
 .contact-animations lottie-player {
-    transform: scale(2.5);
+    transform: scale(2.2);
+}
+
+.contact-animations lottie-player,
+.contact-animations svg {
+    z-index: 1;
+}
+
+.clients .section-title,
+.clients .clients-contact {
+    z-index: 1000;
+    position: relative;
 }
 
 .contact-animations .right {
-    margin-left: -55px;
+    margin-left: -105px;
+}
+
+footer {
+    margin-top: -75px;
+}
+
+@media screen and (min-width:420px) {
+    footer {
+        margin-top: -60px;
+    }
 }
 
 @media screen and (min-width:760px) {
+    @keyframes slide {
+        100% {
+            transform: translateX(-65%);
+        }
+    }
+
     .counter-des {
         font-size: 1em;
         width: 65%;
     }
+
+    .banner .section-title .btn,
+    .clients .section-title .btn {
+        max-width: 400px;
+        margin: auto;
+    }
+
+    .counter {
+        font-size: 1.5em;
+    }
+
+    .services-imgs {
+        max-width: 700px;
+        margin: auto;
+        overflow: visible;
+        padding-bottom: 120px;
+    }
+
+    .service-img.one {
+        transform: translateX(-10px) translateY(20px) scale(1);
+    }
+
+    .service-img.two {
+        transform: translateX(5px) scale(1.07);
+    }
+
+    .service-img.five {
+        transform: scale(1.3) translateY(50px) translateX(-10px);
+        z-index: 1000;
+    }
+
+    .service-img.four {
+        transform: translateY(60px) scale(1.3) translateX(35px);
+        z-index: 1000;
+    }
+
+    .service-img.six {
+        transform: translateY(-10px) scale(0.8) translateX(0px);
+    }
+
+    .service-img.seven {
+        transform: translateX(-10px) translateY(110px) scale(1.1);
+    }
+
+    .clients-slider {
+        margin: 40px 0;
+    }
+
+    .client-slider-card {
+        min-height: 70px;
+        width: 160px;
+    }
+
+    .contact-animations {
+        max-width: 540px;
+        margin: auto;
+    }
+
+    .contact-animations lottie-player {
+        height: 300px !important;
+    }
+
+    .contact-animations .right {
+        margin-left: -200px;
+    }
+
+    footer {
+        margin-top: -60px;
+    }
 }
 
 @media screen and (min-width:1000px) {
+    @keyframes slide {
+        100% {
+            transform: translateX(-70%);
+        }
+    }
+
     .counters-container {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         font-size: 1em;
     }
 
-    .counter-number {
-        font-size: 3.5em;
+    .counter-des {
+        font-size: 0.9em;
     }
 
-    .client-slider-card:hover {
+    .client-slider-card:hover img {
         opacity: 1;
+        filter: grayscale(0);
+    }
+
+    .services-imgs {
+        max-width: 900px;
+        padding-bottom: 120px;
+    }
+
+    .service-img img {
+        width: 240px;
+        height: 300px;
+        transition: 0.3s ease;
+    }
+
+    .service-img h3 {
+        font-size: 1.5em;
+    }
+
+    .service-img:hover img {
+        width: 320px;
+        height: 320px;
+    }
+
+    .service-img:hover .service-title {
+        height: 70%;
+    }
+
+    .service-img.one {
+        transform: translateX(-40px) translateY(40px) scale(1);
+    }
+
+    .service-img.two {
+        transform: translateX(-5px) scale(1.15);
+    }
+
+    .service-img.five {
+        transform: scale(1.3) translateY(80px) translateX(20px);
+    }
+
+    .service-img.four {
+        transform: translateY(90px) scale(1.3) translateX(50px);
+    }
+
+    .service-img.six {
+        transform: translateY(40px) scale(1) translateX(80px);
+    }
+
+    .service-img.seven {
+        transform: translateX(50px) translateY(170px) scale(1.1);
+    }
+
+    .services .link {
+        margin-top: 70px;
+    }
+
+    .banner-animation {
+        margin-top: 30px;
+        min-height: 200px;
+    }
+
+    .banner-animation .left {
+        display: initial;
+    }
+
+    .banner-animation {
+        display: flex;
+    }
+
+    .banner .section-title .btn,
+    .clients .btn {
+        font-size: 1.1em;
+    }
+
+    .contact-animations {
+        max-width: 600px;
+    }
+
+    .contact-animations lottie-player {
+        height: 400px !important;
+    }
+
+    .contact-animations .right {
+        margin-left: -150px;
+    }
+
+    footer {
+        margin-top: -70px;
     }
 }
 
 @media screen and (min-width:1300px) {
-    .counter-number {
-        font-size: 4.5em;
+    @keyframes slide {
+        100% {
+            transform: translateX(-35%);
+        }
+    }
+
+    .clients-slider {
+        max-width: 1350px;
+        margin: 40px auto;
+    }
+
+    .clients-container {
+        gap: 45px;
+        animation: slide 12s infinite linear;
+    }
+
+    .banner:after {
+        height: 100px;
+    }
+
+    .banner .section-title h1 {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 5px;
+    }
+
+    .banner .section-title p {
+        width: 85%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .banner-animation {
+        min-height: 400px;
+        margin: auto;
+        margin-top: 10px;
+        max-width: 1600px;
     }
 
     .counter-number span {
-        font-size: 0.7em;
+        font-size: 1.1em;
     }
 
     .counter-des {
-        font-size: 1.35em;
+        font-size: 1em;
+    }
+
+    .services-imgs {
+        margin-top: 50px;
+    }
+
+    .service-img.one {
+        transform: translateX(-80px) translateY(50px) scale(1.3);
+    }
+
+    .service-img.two {
+        transform: translateX(20px) scale(1.4);
+    }
+
+    .service-img.five {
+        transform: scale(1.55) translateY(120px) translateX(-45px);
+    }
+
+    .service-img.four {
+        transform: translateY(90px) scale(1.25) translateX(90px);
+    }
+
+    .service-img.six {
+        transform: translateY(100px) scale(1.2) translateX(35px);
+    }
+
+    .service-img.seven {
+        transform: translateX(145px) translateY(215px) scale(1.5);
+    }
+
+    .service-img:hover img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .services {
+        padding-top: 60px;
+    }
+
+    .services .link {
+        margin-top: 180px;
+    }
+
+    .clients {
+        padding-top: 100px;
+    }
+
+    .banner .section-title .btn,
+    .clients .btn {
+        font-size: 1.3em;
+        margin-bottom: 5px;
     }
 }
