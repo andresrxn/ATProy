@@ -976,7 +976,7 @@ input[type=number] {
     background: var(--blanco);
     outline: 1px solid #777777;
     padding: 20px;
-    max-width: 470px;
+    max-width: 500px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     display: grid;
@@ -986,8 +986,8 @@ input[type=number] {
 }
 
 .cookies-container .h3 {
-    margin-bottom: -5px;
-    font-size: 1.3em;
+    margin-bottom: 5px;
+    font-size: 1.35em;
 }
 
 .cookies-container .form {
@@ -1360,13 +1360,6 @@ footer {
         width: 80%;
     }
 
-    .cookies-container {
-        width: 450px;
-        border-radius: 10px;
-        margin: auto;
-        animation: scale 0.5s ease forwards;
-    }
-
     .form-control input,
     .form-control select,
     .form-control textarea {
@@ -1386,6 +1379,32 @@ footer {
     .form-control .characters {
         font-size: 0.7em;
         top: 187px;
+    }
+
+    .cookies {
+        bottom: 20px;
+    }
+
+    .cookies-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 480px;
+        border-radius: 10px;
+        margin: auto;
+        animation: scale 0.5s ease forwards;
+    }
+
+    .cookies-title {
+        width: 70%;
+    }
+
+    .cookies-title a {
+        display: block;
+    }
+
+    .cookies .form {
+        width: 30%;
     }
 
     .footer-contact {
@@ -1629,6 +1648,16 @@ footer {
         font-size: 1.3em;
     }
 
+    .cookies-container {
+        width: 650px;
+        max-width: 650px;
+        gap: 20px;
+    }
+
+    .cookies-title a {
+        display: inline;
+    }
+
     .footer-contact {
         max-width: 710px !important;
         display: flex;
@@ -1745,6 +1774,13 @@ footer {
 
     .section-title.center {
         width: 70%;
+    }
+
+    .cookies-container {
+        width: 750px;
+        max-width: 750px;
+        gap: 25px;
+        font-size: 0.9em;
     }
 
     .cookies-container h3 {
