@@ -298,7 +298,8 @@ header {
 }
 
 .header-logo {
-    width: auto;
+    align-self: flex-start;
+    width: max-content;
     height: 100%;
     text-decoration: none;
     opacity: 1;
@@ -307,6 +308,8 @@ header {
 
 .header-logo img {
     height: 100%;
+    width: auto;
+    max-width: 150px;
 }
 
 .header-logo.hidden {
