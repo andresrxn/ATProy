@@ -10,11 +10,80 @@ const itemBox = document.querySelectorAll('[data-filter-card]');
 const btns = document.querySelectorAll('button.btn')
 const formatAmounts = document.querySelectorAll('[data-format-amount]')
 const navLinks = headerNav.querySelectorAll('li')
+const mores = document.querySelectorAll('[data-more]');
 btns.forEach(btn => {
     btn.addEventListener('click', (e) => {
         e.preventDefault()
     })
 });
+
+var scaleElements = document.getElementsByClassName("scale");
+var mostrarArribaElements = document.getElementsByClassName("mostrarArriba");
+var opacityElements = document.getElementsByClassName("opacity");
+var popupElements = document.getElementsByClassName("popup");
+var progressElement = document.getElementsByClassName("progressAnimation");
+var controller = new ScrollMagic.Controller();
+
+for (var i = 0; i < scaleElements.length; i++) { // create a scene for each element
+    new ScrollMagic.Scene({
+        triggerElement: scaleElements[i], // 
+        reverse: false,
+        triggerHook: 0.95,
+        offset: 35,
+
+    })
+        .setClassToggle(scaleElements[i], "animated")
+
+        .addTo(controller);
+}
+
+for (var i = 0; i < mostrarArribaElements.length; i++) { // create a scene for each element
+    new ScrollMagic.Scene({
+        triggerElement: mostrarArribaElements[i], // 
+        reverse: false,
+        triggerHook: 0.92,
+        offset: 35,
+    })
+        .setClassToggle(mostrarArribaElements[i], "animated")
+
+        .addTo(controller);
+}
+
+for (var i = 0; i < opacityElements.length; i++) { // create a scene for each element
+    new ScrollMagic.Scene({
+        triggerElement: opacityElements[i], // 
+        reverse: false,
+        triggerHook: 0.92,
+        offset: 35,
+
+    })
+        .setClassToggle(opacityElements[i], "animated")
+
+        .addTo(controller);
+}
+
+for (var i = 0; i < popupElements.length; i++) { // create a scene for each element
+    new ScrollMagic.Scene({
+        triggerElement: popupElements[i], // 
+        reverse: false,
+        triggerHook: 0.9,
+        offset: 35,
+
+    })
+        .setClassToggle(popupElements[i], "animated")
+
+        .addTo(controller);
+}
+for (var i = 0; i < progressElement.length; i++) { // create a scene for each element
+    new ScrollMagic.Scene({
+        triggerElement: progressElement[i], // 
+        reverse: false,
+        triggerHook: 0.95,
+    })
+        .setClassToggle(progressElement[i], "animated")
+
+        .addTo(controller);
+}
 
 // Menu
 let menuOpen = false;
@@ -73,3 +142,8 @@ if (document.querySelectorAll('.lazy')) {
         observer.observe(image);
     });
 }
+mores.forEach(more => {
+    more.addEventListener('click', () => {
+        more.parentElement.classList.toggle('show')
+    })
+});
