@@ -290,6 +290,7 @@ header {
 
 .header-container {
     justify-content: space-between;
+    -webkit-justify-content: space-between;
     position: relative;
     height: 100%;
     padding: 8px 0;
@@ -297,7 +298,7 @@ header {
 }
 
 .header-logo {
-    width: max-content;
+    width: auto;
     height: 100%;
     text-decoration: none;
     opacity: 1;
@@ -356,6 +357,7 @@ header {
     background: rgba(0, 0, 0, .05);
     display: flex;
     justify-content: space-between;
+    -webkit-justify-content: space-between;
     align-items: center;
     text-decoration: none;
     color: inherit;
@@ -1276,10 +1278,6 @@ footer {
     .footer-list {
         padding: 0;
     }
-
-    .footer-announce-container p {
-        font-size: 1.25em;
-    }
 }
 
 @media screen and (min-width:760px) {
@@ -1673,10 +1671,6 @@ footer {
         width: 120%;
     }
 
-    .footer-announce-title {
-        width: 100%;
-    }
-
     .footer-contact h2 {
         font-size: 1.7em;
     }
@@ -1722,27 +1716,6 @@ footer {
 
     .footer-copy {
         margin-bottom: 7px;
-    }
-
-    .footer-announce-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 50px;
-    }
-
-    .footer-announce-title {
-        width: 100%;
-    }
-
-    .footer-announce-container p,
-    .footer-announce-container .h3 {
-        max-width: unset;
-    }
-
-    .footer-announce-container .btn.btn-donation {
-        padding: 12px 60px;
-        font-size: 1.3em;
     }
 }
 
@@ -1848,10 +1821,6 @@ footer {
 
     .footer-contact-animation lottie-player {
         transform: scale(2.1);
-    }
-
-    .footer-announce-title {
-        width: 100%;
     }
 
     .footer-contact h2 {
